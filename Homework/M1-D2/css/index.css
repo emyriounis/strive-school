@@ -1,0 +1,65 @@
+body {
+    width: 80%;
+    min-height: 100vh;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #eeeee5;
+}
+
+#profile-picture {
+    border-radius: 50%;
+    border: 3px solid #4aa3a3;
+}
+
+#hobbies {
+    color: #fb651e;
+}
+
+#experience {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+table, th, td {
+    border: 1px solid black;
+}
+
+th {
+    font-weight: 300;
+}
+
+.header {
+    font-weight: 900;
+    font-size: larger;
+}
+
+#social {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    width: 100%;
+}
+
+.social-link {
+    padding: 15px;
+    font-size: x-large;
+    text-decoration: none;
+}
+
+.fa-twitter {
+    color: #55ACEE;
+}
+
+.fa-linkedin {
+    color: #0077b5;
+}
+
+.fa-github {
+    color: #171515;
+}
