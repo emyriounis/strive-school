@@ -62,7 +62,7 @@ me.skills.pop()
     Write a function called dice; it should randomize an integer number between 1 and 6.
 */
 
-const dice = () => Math.floor(Math.random() * 7)
+const dice = () => Math.floor(Math.random() * 6 + 1)
 
 /* EXERCISE 2
     Write a function called whoIsBigger which receives 2 numbers as parameters and returns the biggest one.
