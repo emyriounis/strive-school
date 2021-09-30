@@ -1,0 +1,51 @@
+body {
+    background-color: black;
+    color: white;
+    max-width: 1280px;
+    margin: 50px auto auto;
+    display: flex;
+}
+
+#bingo-board {
+    width: 80%;
+}
+
+button {
+    width: 15%;
+    height: 100px;
+    text-align: center;
+    padding: 32px;
+    background-color: #0f0f0f;
+    border: solid 3px #00db71;
+    color: white;
+    border-radius: 4px;
+    font-size: larger;
+    margin-left: 10px;
+    font-weight: bolder;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #2f2f2f;
+}
+
+
+.number {
+    background-color: #2f2f2f;
+    display: inline-block;
+    width: 10%;
+    min-height: 45px;
+    text-align: center;
+    vertical-align: middle;
+    padding-top: 32px;
+    font-size: x-large;
+    font-weight: bold;
+    border: 2px solid rgb(49, 49, 49);
+    margin: 3px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.number:hover {
+    border: 2px solid gray;
+}
