@@ -137,7 +137,6 @@ const newQuestion = () => {
     
     unansweredQuestions.length <= 0 ? (() => {
         document.getElementById("main").style.display = "none"
-        document.getElementById("finish").display = "block"
         document.getElementById("result").innerText = `You did: ${correct}/${correct + wrong}`
         return
     }) :
@@ -167,8 +166,10 @@ const questionNode = (question) => {
 
     return node
 }
+
 let correct = 0
 let wrong = 0
+
 const answerNode = (question, answer) => {
 
     let node = document.createElement("button")

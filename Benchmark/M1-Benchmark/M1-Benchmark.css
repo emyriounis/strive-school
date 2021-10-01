@@ -20,6 +20,7 @@ body {
 }
 
 #main {
+    visibility: hidden;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -45,6 +46,10 @@ section {
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
+}
+
+#next {
+    display: none;
 }
 
 #answers {
