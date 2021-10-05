@@ -33,7 +33,11 @@ HINT: Manage your time in order to finish the structure and responsiveness befor
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
 
     <style>
         /* EXERCISE 1
@@ -53,6 +57,41 @@ HINT: Manage your time in order to finish the structure and responsiveness befor
             create CSS rules to style them if needed
             ...to make sure every Album component looks the same.
          */
+
+         #albums {
+            margin-top: 50px; 
+         }
+
+         .card-title {
+             text-align: center;
+             font-size: 1.5em;
+        }
+
+        footer {
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-end;
+            width: 100%;
+        }
+
+        .social-link {
+            padding: 15px;
+            font-size: x-large;
+            text-decoration: none;
+        }
+
+        .fa-twitter {
+            color: #55ACEE;
+        }
+
+        .fa-linkedin {
+            color: #0077b5;
+        }
+
+        .fa-github {
+            color: #171515;
+        }
+
     </style>
 </head>
 
@@ -61,6 +100,28 @@ HINT: Manage your time in order to finish the structure and responsiveness befor
             Implement a navigation bar using the bootstrap component
             This navigation bar must link every section in your page.
         -->
+    <nav class="navbar navbar-light navbar-expand-lg bg-light fixed-top">
+        <div class="container-fluid">
+          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Offcanvas</h5>
+              <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                <a class="nav-link" href="#albums">Albums</a>
+                <a class="nav-link" href="#reviews">Reviews</a>
+                <a class="nav-link" href="#worstAlbums">Worst Albums</a>
+                <a class="nav-link" href="#favBand">Favorite Band</a>
+                <a class="nav-link" href="#covers">Covers</a>
+                <a class="nav-link" href="#footer">Footer</a>
+            </div>
+          </div>
+        </div>
+      </nav>
 
     <!-- EXERCISE 3
             Create a responsive section for your favourite albums.
@@ -69,6 +130,130 @@ HINT: Manage your time in order to finish the structure and responsiveness befor
             - 3 albums per row when you are on a tablet (or a smaller viewport)
             - 2 albums per row when you are on a small screen
         -->
+    <section id="albums"><div class="album py-5 bg-light">
+        <h3 class="text-center py-4">My favorite albums</h3>
+        <div class="container">
+    
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-3">
+                <div class="col">
+                    <div class="card shadow-sm">
+                        <img src="./soundwave.png" alt="cover" style="width: 100%; height: 225px; object-fit: cover;">
+
+                        <div class="card-body">
+                            <div class="card-title">Randon song title</div>
+                            <div class="d-flex justify-content-between align-items-center py-2">
+                                <small class="text-muted">Random singer</small>
+                                <small class="text-muted">Genre</small>
+                            </div>
+                            <div class="d-flex justify-content-between align-items-center py-2">
+                                <div class="btn-group">
+                                    <button type="button" class="btn btn-sm btn-outline-secondary">Play</button>
+                                </div>
+                                <small class="text-muted">3 mins</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card shadow-sm">
+                        <img src="./soundwave.png" alt="cover" style="width: 100%; height: 225px; object-fit: cover;">
+
+                        <div class="card-body">
+                            <div class="card-title">Randon song title</div>
+                            <div class="d-flex justify-content-between align-items-center py-2">
+                                <small class="text-muted">Random singer</small>
+                                <small class="text-muted">Genre</small>
+                            </div>
+                            <div class="d-flex justify-content-between align-items-center py-2">
+                                <div class="btn-group">
+                                    <button type="button" class="btn btn-sm btn-outline-secondary">Play</button>
+                                </div>
+                                <small class="text-muted">3 mins</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card shadow-sm">
+                        <img src="./soundwave.png" alt="cover" style="width: 100%; height: 225px; object-fit: cover;">
+
+                        <div class="card-body">
+                            <div class="card-title">Randon song title</div>
+                            <div class="d-flex justify-content-between align-items-center py-2">
+                                <small class="text-muted">Random singer</small>
+                                <small class="text-muted">Genre</small>
+                            </div>
+                            <div class="d-flex justify-content-between align-items-center py-2">
+                                <div class="btn-group">
+                                    <button type="button" class="btn btn-sm btn-outline-secondary">Play</button>
+                                </div>
+                                <small class="text-muted">3 mins</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="card shadow-sm">
+                        <img src="./soundwave.png" alt="cover" style="width: 100%; height: 225px; object-fit: cover;">
+
+                        <div class="card-body">
+                            <div class="card-title">Randon song title</div>
+                            <div class="d-flex justify-content-between align-items-center py-2">
+                                <small class="text-muted">Random singer</small>
+                                <small class="text-muted">Genre</small>
+                            </div>
+                            <div class="d-flex justify-content-between align-items-center py-2">
+                                <div class="btn-group">
+                                    <button type="button" class="btn btn-sm btn-outline-secondary">Play</button>
+                                </div>
+                                <small class="text-muted">3 mins</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card shadow-sm">
+                        <img src="./soundwave.png" alt="cover" style="width: 100%; height: 225px; object-fit: cover;">
+
+                        <div class="card-body">
+                            <div class="card-title">Randon song title</div>
+                            <div class="d-flex justify-content-between align-items-center py-2">
+                                <small class="text-muted">Random singer</small>
+                                <small class="text-muted">Genre</small>
+                            </div>
+                            <div class="d-flex justify-content-between align-items-center py-2">
+                                <div class="btn-group">
+                                    <button type="button" class="btn btn-sm btn-outline-secondary">Play</button>
+                                </div>
+                                <small class="text-muted">3 mins</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card shadow-sm">
+                        <img src="./soundwave.png" alt="cover" style="width: 100%; height: 225px; object-fit: cover;">
+
+                        <div class="card-body">
+                            <div class="card-title">Randon song title</div>
+                            <div class="d-flex justify-content-between align-items-center py-2">
+                                <small class="text-muted">Random singer</small>
+                                <small class="text-muted">Genre</small>
+                            </div>
+                            <div class="d-flex justify-content-between align-items-center py-2">
+                                <div class="btn-group">
+                                    <button type="button" class="btn btn-sm btn-outline-secondary">Play</button>
+                                </div>
+                                <small class="text-muted">3 mins</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </section>
 
     <!-- EXERCISE 4
             Create a section for the album reviews.
@@ -81,27 +266,337 @@ HINT: Manage your time in order to finish the structure and responsiveness befor
             - Tracklist
             - ... And whatever you think it's interesting about it!
         -->
+    <section class="contaner px-4 my-4" id="reviews">
+        <h3 class="text-center py-4">Review</h3>
+        <div class="row">
+            <div class="col-12 col-lg-6">
+                <div class="card shadow-sm">
+                    <img src="./soundwave.png" alt="cover" style="width: 100%; object-fit: cover;">
+
+                    <div class="card-body">
+                        <div class="card-title">Randon song title</div>
+                        <div class="d-flex justify-content-between align-items-center py-2">
+                            <small class="text-muted">Random singer</small>
+                            <small class="text-muted">Genre</small>
+                        </div>
+                        <div class="d-flex justify-content-between align-items-center py-2">
+                            <div class="btn-group">
+                                <button type="button" class="btn btn-sm btn-outline-secondary">Play</button>
+                            </div>
+                            <small class="text-muted">3 mins</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-lg-6">
+                <hr>
+                <div class="row">
+                    <span class="row col-6">
+                        <span class="col-3">1</span>
+                        <span class="col-9">title</span>
+                    </span>
+                    <span class="col-6" style="text-align: end;">3 mins</span>
+                </div>
+                <hr>
+                <div class="row">
+                    <span class="row col-6">
+                        <span class="col-3">2</span>
+                        <span class="col-9">title</span>
+                    </span>
+                    <span class="col-6" style="text-align: end;">3 mins</span>
+                </div>
+                <hr>
+                <div class="row">
+                    <span class="row col-6">
+                        <span class="col-3">3</span>
+                        <span class="col-9">title</span>
+                    </span>
+                    <span class="col-6" style="text-align: end;">3 mins</span>
+                </div>
+                <hr>
+                <div class="row">
+                    <span class="row col-6">
+                        <span class="col-3">4</span>
+                        <span class="col-9">title</span>
+                    </span>
+                    <span class="col-6" style="text-align: end;">3 mins</span>
+                </div>
+                <hr>
+                <div class="row">
+                    <span class="row col-6">
+                        <span class="col-3">5</span>
+                        <span class="col-9">title</span>
+                    </span>
+                    <span class="col-6" style="text-align: end;">3 mins</span>
+                </div>
+                <hr>
+                <div class="row">
+                    <span class="row col-6">
+                        <span class="col-3">6</span>
+                        <span class="col-9">title</span>
+                    </span>
+                    <span class="col-6" style="text-align: end;">3 mins</span>
+                </div>
+                <hr>
+                <div class="row">
+                    <span class="row col-6">
+                        <span class="col-3">7</span>
+                        <span class="col-9">title</span>
+                    </span>
+                    <span class="col-6" style="text-align: end;">3 mins</span>
+                </div>
+                <hr>
+                <div class="row">
+                    <span class="row col-6">
+                        <span class="col-3">8</span>
+                        <span class="col-9">title</span>
+                    </span>
+                    <span class="col-6" style="text-align: end;">3 mins</span>
+                </div>
+                <hr>
+                <div class="row">
+                    <span class="row col-6">
+                        <span class="col-3">9</span>
+                        <span class="col-9">title</span>
+                    </span>
+                    <span class="col-6" style="text-align: end;">3 mins</span>
+                </div>
+                <hr>
+                <div class="row">
+                    <span class="row col-6">
+                        <span class="col-3">10</span>
+                        <span class="col-9">title</span>
+                    </span>
+                    <span class="col-6" style="text-align: end;">3 mins</span>
+                </div>
+                <hr>
+                <div class="row">
+                    <span class="row col-6">
+                        <span class="col-3">11</span>
+                        <span class="col-9">title</span>
+                    </span>
+                    <span class="col-6" style="text-align: end;">3 mins</span>
+                </div>
+            </div>
+            <div class="col-12 py-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex laudantium molestiae labore expedita! Ad in officia aperiam expedita voluptates accusantium ex vitae consectetur tenetur deleniti, doloribus, sapiente, enim illo odio?Lorem, ipsum dolor sit amet consectetur adipisicing elit. Animi recusandae corrupti molestiae fugit aspernatur, exercitationem, velit, quisquam magnam dolores debitis accusantium asperiores possimus. Odit rem sunt officiis totam suscipit eaque.</div>
+        </div>
+    </section>
 
     <!-- EXERCISE 5
             Worst album list! Choose the albums you dislike or some you think are overrated and list it
             in this "hall of shame" chart! 
         -->
+    <section class=" my-4" id="worstAlbums">
+        <h3 class="text-center py-4">My worst albums</h3>
+        <div class="container">
+    
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-3">
+                <div class="col">
+                    <div class="card shadow-sm">
+                        <img src="./soundwave.png" alt="cover" style="width: 100%; height: 225px; object-fit: cover;">
+
+                        <div class="card-body">
+                            <div class="card-title">Randon song title</div>
+                            <div class="d-flex justify-content-between align-items-center py-2">
+                                <small class="text-muted">Random singer</small>
+                                <small class="text-muted">Genre</small>
+                            </div>
+                            <div class="d-flex justify-content-between align-items-center py-2">
+                                <div class="btn-group">
+                                    <button type="button" class="btn btn-sm btn-outline-secondary">Play</button>
+                                </div>
+                                <small class="text-muted">3 mins</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card shadow-sm">
+                        <img src="./soundwave.png" alt="cover" style="width: 100%; height: 225px; object-fit: cover;">
+
+                        <div class="card-body">
+                            <div class="card-title">Randon song title</div>
+                            <div class="d-flex justify-content-between align-items-center py-2">
+                                <small class="text-muted">Random singer</small>
+                                <small class="text-muted">Genre</small>
+                            </div>
+                            <div class="d-flex justify-content-between align-items-center py-2">
+                                <div class="btn-group">
+                                    <button type="button" class="btn btn-sm btn-outline-secondary">Play</button>
+                                </div>
+                                <small class="text-muted">3 mins</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card shadow-sm">
+                        <img src="./soundwave.png" alt="cover" style="width: 100%; height: 225px; object-fit: cover;">
+
+                        <div class="card-body">
+                            <div class="card-title">Randon song title</div>
+                            <div class="d-flex justify-content-between align-items-center py-2">
+                                <small class="text-muted">Random singer</small>
+                                <small class="text-muted">Genre</small>
+                            </div>
+                            <div class="d-flex justify-content-between align-items-center py-2">
+                                <div class="btn-group">
+                                    <button type="button" class="btn btn-sm btn-outline-secondary">Play</button>
+                                </div>
+                                <small class="text-muted">3 mins</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </section>
 
     <!-- EXERCISE 6
             Do you have any musician / band you admire or you are a fan of?
             This section is dedicated to him / her / them!
             Feel free to experiment in this part of the page.
         -->
+    <section class="my-4" id="favBand">
+        <h3 class="text-center py-4">Favorite Band</h3>
+        <div class="row">
+            <div class="col-12 col-lg-6">
+                <div class="card shadow-sm">
+                    <img src="./soundwave.png" alt="cover" style="width: 100%; object-fit: cover;">
+
+                    <div class="card-body">
+                        <div class="card-title">Singer</div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-lg-6 py-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex laudantium molestiae labore expedita! Ad in officia aperiam expedita voluptates accusantium ex vitae consectetur tenetur deleniti, doloribus, sapiente, enim illo odio?Lorem, ipsum dolor sit amet consectetur adipisicing elit. Animi recusandae corrupti molestiae fugit aspernatur, exercitationem, velit, quisquam magnam dolores debitis accusantium asperiores possimus. Odit rem sunt officiis totam suscipit eaque. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Impedit ullam incidunt nemo error ipsum quidem, libero architecto. Dolorem beatae culpa, qui deleniti velit iusto vel consequatur eum eius! Reprehenderit, assumenda. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa necessitatibus hic illo voluptates molestiae sint voluptatum magnam saepe illum atque, sequi ducimus cumque pariatur officia neque. Amet aperiam dignissimos quod!</div>
+        </div>
+    </section>
 
     <!-- EXERCISE 7
             Just covers!
             Create a tapestry of album pictures. Every album picture must be "squared" (use CSS to achieve that).
             Put at least 20 covers (also repeated) to have a nice tapestry effect and see how Bootstrap handles it.
         -->
+    <section id="covers">
+        <h3 class="text-center py-4">Albums that I own</h3>
+        <div class="container">
+    
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-3">
+                <div class="col">
+                    <div class="card shadow-sm">
+                        <img src="./soundwave.png" alt="cover" style="width: 100%; height: 225px; object-fit: cover;">
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card shadow-sm">
+                        <img src="./soundwave.png" alt="cover" style="width: 100%; height: 225px; object-fit: cover;">
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card shadow-sm">
+                        <img src="./soundwave.png" alt="cover" style="width: 100%; height: 225px; object-fit: cover;">
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card shadow-sm">
+                        <img src="./soundwave.png" alt="cover" style="width: 100%; height: 225px; object-fit: cover;">
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card shadow-sm">
+                        <img src="./soundwave.png" alt="cover" style="width: 100%; height: 225px; object-fit: cover;">
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card shadow-sm">
+                        <img src="./soundwave.png" alt="cover" style="width: 100%; height: 225px; object-fit: cover;">
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card shadow-sm">
+                        <img src="./soundwave.png" alt="cover" style="width: 100%; height: 225px; object-fit: cover;">
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card shadow-sm">
+                        <img src="./soundwave.png" alt="cover" style="width: 100%; height: 225px; object-fit: cover;">
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card shadow-sm">
+                        <img src="./soundwave.png" alt="cover" style="width: 100%; height: 225px; object-fit: cover;">
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card shadow-sm">
+                        <img src="./soundwave.png" alt="cover" style="width: 100%; height: 225px; object-fit: cover;">
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card shadow-sm">
+                        <img src="./soundwave.png" alt="cover" style="width: 100%; height: 225px; object-fit: cover;">
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card shadow-sm">
+                        <img src="./soundwave.png" alt="cover" style="width: 100%; height: 225px; object-fit: cover;">
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card shadow-sm">
+                        <img src="./soundwave.png" alt="cover" style="width: 100%; height: 225px; object-fit: cover;">
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card shadow-sm">
+                        <img src="./soundwave.png" alt="cover" style="width: 100%; height: 225px; object-fit: cover;">
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card shadow-sm">
+                        <img src="./soundwave.png" alt="cover" style="width: 100%; height: 225px; object-fit: cover;">
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card shadow-sm">
+                        <img src="./soundwave.png" alt="cover" style="width: 100%; height: 225px; object-fit: cover;">
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card shadow-sm">
+                        <img src="./soundwave.png" alt="cover" style="width: 100%; height: 225px; object-fit: cover;">
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card shadow-sm">
+                        <img src="./soundwave.png" alt="cover" style="width: 100%; height: 225px; object-fit: cover;">
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card shadow-sm">
+                        <img src="./soundwave.png" alt="cover" style="width: 100%; height: 225px; object-fit: cover;">
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card shadow-sm">
+                        <img src="./soundwave.png" alt="cover" style="width: 100%; height: 225px; object-fit: cover;">
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </section>
 
     <!-- EXERCISE 8
             Implement a footer with some information / social links.
         -->
+    <footer class="mt-5" id="footer">
+        <a href="https://twitter.com/e_myriounis" class="social-link fa fa-twitter" id="twitter"></a>
+        <a href="https://gr.linkedin.com/in/eleftherios-myriounis" class="social-link fa fa-linkedin" id="linkedin"></a>
+        <a href="https://github.com/emyriounis" class="social-link fa fa-github" id="github"></a>
+    </footer>
 
     <!-- ############ EXTRA:
         EXERCISE 9
@@ -130,7 +625,154 @@ HINT: Manage your time in order to finish the structure and responsiveness befor
             listItem.classList.add("listItem")
             list.appendChild(listItem)
         })
-        document.querySelector("body").appendChild(list)
+        // document.querySelector("body").appendChild(list) // not sure if this is needed
+
+
+
+        let albums = [
+            {
+                cover: "1",
+                title: "1",
+                singer: "1",
+                genre: "1",
+                duration: "1"
+            },
+            {
+                cover: "2",
+                title: "2",
+                singer: "2",
+                genre: "2",
+                duration: "2"
+            },
+            {
+                cover: "3",
+                title: "3",
+                singer: "3",
+                genre: "3",
+                duration: "3"
+            },
+            {
+                cover: "4",
+                title: "4",
+                singer: "4",
+                genre: "4",
+                duration: "4"
+            },
+            {
+                cover: "5",
+                title: "5",
+                singer: "5",
+                genre: "5",
+                duration: "5"
+            },
+            {
+                cover: "6",
+                title: "6",
+                singer: "6",
+                genre: "6",
+                duration: "6"
+            },
+            {
+                cover: "7",
+                title: "7",
+                singer: "7",
+                genre: "7",
+                duration: "7"
+            },
+            {
+                cover: "8",
+                title: "8",
+                singer: "8",
+                genre: "8",
+                duration: "8"
+            },
+            {
+                cover: "9",
+                title: "9",
+                singer: "9",
+                genre: "9",
+                duration: "9"
+            },
+            {
+                cover: "10",
+                title: "10",
+                singer: "10",
+                genre: "10",
+                duration: "10"
+            },
+            {
+                cover: "11",
+                title: "11",
+                singer: "11",
+                genre: "11",
+                duration: "11"
+            },
+            {
+                cover: "12",
+                title: "12",
+                singer: "12",
+                genre: "12",
+                duration: "12"
+            },
+            {
+                cover: "13",
+                title: "13",
+                singer: "13",
+                genre: "13",
+                duration: "13"
+            },
+            {
+                cover: "14",
+                title: "14",
+                singer: "14",
+                genre: "14",
+                duration: "14"
+            },
+            {
+                cover: "15",
+                title: "15",
+                singer: "15",
+                genre: "15",
+                duration: "15"
+            },
+            {
+                cover: "16",
+                title: "16",
+                singer: "16",
+                genre: "16",
+                duration: "16"
+            },
+            {
+                cover: "17",
+                title: "17",
+                singer: "17",
+                genre: "17",
+                duration: "71"
+            },
+            {
+                cover: "18",
+                title: "18",
+                singer: "18",
+                genre: "18",
+                duration: "18"
+            },
+            {
+                cover: "19",
+                title: "19",
+                singer: "19",
+                genre: "19",
+                duration: "19"
+            },
+            {
+                cover: "20",
+                title: "20",
+                singer: "20",
+                genre: "20",
+                duration: "20"
+            }
+        ]
+
+
 
     </script>
 </body>
