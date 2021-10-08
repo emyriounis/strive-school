@@ -1,8 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+  <head>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+      integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l"
+      crossorigin="anonymous"
+    />
     <!--
 
         ASSIGNMENT RULES
@@ -54,120 +58,233 @@
         Ex 16) Create a function that adds a "HOT" badge to all the "Welcome Summer" offers
         Ex 17) Create a function to delete all "cards" from the page
       -->
-</head>
+  </head>
 
-<body>
+  <body>
     <!-- Ex1 -->
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="#">
-            <img src="./fav.png" alt="Logo" width="45px">
-        </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
+      <a class="navbar-brand" href="#">
+        <img src="./fav.png" alt="Logo" width="45px" />
+      </a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
 
       <!-- Ex2 -->
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav mr-auto">
-            <li class="nav-item active">
-              <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Link</a>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Dropdown
-              </a>
-              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <a class="dropdown-item" href="#">Action</a>
-                <a class="dropdown-item" href="#">Another action</a>
-                <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="#">Something else here</a>
-              </div>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-            </li>
-          </ul>
-          <form class="form-inline my-2 my-lg-0">
-            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-          </form>
-        </div>
-      </nav>
-
-      <!-- Ex3 -->
-      <div class="jumbotron">
-        <h1 class="display-4">Random Travel Agency</h1>
-        <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, possimus voluptatibus necessitatibus, magni aut, consequatur quam numquam excepturi quos fugiat nobis beatae tempore ipsa enim. Fuga id ipsum odit neque?</p>
-        <hr class="my-4">
-        <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
-        <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#"
+              >Home <span class="sr-only">(current)</span></a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Link</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle"
+              href="#"
+              id="navbarDropdown"
+              role="button"
+              data-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false"
+            >
+              Dropdown
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="#">Action</a>
+              <a class="dropdown-item" href="#">Another action</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">Something else here</a>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a
+              class="nav-link disabled"
+              href="#"
+              tabindex="-1"
+              aria-disabled="true"
+              >Disabled</a
+            >
+          </li>
+        </ul>
+        <form class="form-inline my-2 my-lg-0">
+          <input
+            class="form-control mr-sm-2"
+            type="search"
+            placeholder="Search"
+            aria-label="Search"
+          />
+          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">
+            Search
+          </button>
+        </form>
       </div>
+    </nav>
 
-      <!-- Ex4 -->
-      <div class="album py-5 bg-light">
-          <h3 class="text-center py-3 mb-3">Deals of the week</h3>
-        <div class="container">
-    
-          <div class="row row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-3">
-            <div class="col">
-              <div class="card shadow-sm shadow-lg p-3 mb-5 bg-body rounded">
-                  <img src="./How-does-Travel-Insurance-Vary-According-to-your-Destination-1-702x336.png" alt="Destination" style="height: 225px; object-fit: cover;">
-    
-                <div class="card-body">
-                  <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. At, quidem perspiciatis est numquam minus libero rem doloremque a maxime. Veritatis sint minima architecto rem deleniti, ab ea doloribus quod aut.
-                  <div class="d-flex justify-content-between align-items-center">
-                    <div class="btn-group">
-                      <button type="button" class="btn btn-sm btn-outline-secondary">Learn more</button>
-                      <button type="button" class="btn btn-sm btn-outline-secondary">Book</button>
-                    </div>
+    <!-- Ex3 -->
+    <div class="jumbotron">
+      <h1 class="display-4">Random Travel Agency</h1>
+      <p class="lead">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto,
+        possimus voluptatibus necessitatibus, magni aut, consequatur quam
+        numquam excepturi quos fugiat nobis beatae tempore ipsa enim. Fuga id
+        ipsum odit neque?
+      </p>
+      <hr class="my-4" />
+      <p>
+        It uses utility classes for typography and spacing to space content out
+        within the larger container.
+      </p>
+      <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
+    </div>
+
+    <!-- Ex4 -->
+    <div class="album py-5 bg-light">
+      <h3 class="text-center py-3 mb-3">Deals of the week</h3>
+      <div class="container">
+        <div class="row row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-3">
+          <div class="col">
+            <div class="card shadow-sm shadow-lg p-3 mb-5 bg-body rounded">
+              <img
+                src="./How-does-Travel-Insurance-Vary-According-to-your-Destination-1-702x336.png"
+                alt="Destination"
+                style="height: 225px; object-fit: cover"
+              />
+
+              <div class="card-body">
+                <p class="card-text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. At,
+                  quidem perspiciatis est numquam minus libero rem doloremque a
+                  maxime. Veritatis sint minima architecto rem deleniti, ab ea
+                  doloribus quod aut.
+                </p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <button
+                      type="button"
+                      class="btn btn-sm btn-outline-secondary"
+                    >
+                      Learn more
+                    </button>
+                    <button
+                      type="button"
+                      class="btn btn-sm btn-outline-secondary"
+                    >
+                      Book
+                    </button>
                   </div>
                 </div>
               </div>
             </div>
-            <div class="col">
-              <div class="card shadow-sm shadow-lg p-3 mb-5 bg-body rounded">
-                  <img src="./How-does-Travel-Insurance-Vary-According-to-your-Destination-1-702x336.png" alt="Destination" style="height: 225px; object-fit: cover;">
-    
-                <div class="card-body">
-                  <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. At, quidem perspiciatis est numquam minus libero rem doloremque a maxime. Veritatis sint minima architecto rem deleniti, ab ea doloribus quod aut.
-                  <div class="d-flex justify-content-between align-items-center">
-                    <div class="btn-group">
-                      <button type="button" class="btn btn-sm btn-outline-secondary">Learn more</button>
-                      <button type="button" class="btn btn-sm btn-outline-secondary">Book</button>
-                    </div>
+          </div>
+          <div class="col">
+            <div class="card shadow-sm shadow-lg p-3 mb-5 bg-body rounded">
+              <img
+                src="./How-does-Travel-Insurance-Vary-According-to-your-Destination-1-702x336.png"
+                alt="Destination"
+                style="height: 225px; object-fit: cover"
+              />
+
+              <div class="card-body">
+                <p class="card-text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. At,
+                  quidem perspiciatis est numquam minus libero rem doloremque a
+                  maxime. Veritatis sint minima architecto rem deleniti, ab ea
+                  doloribus quod aut.
+                </p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <button
+                      type="button"
+                      class="btn btn-sm btn-outline-secondary"
+                    >
+                      Learn more
+                    </button>
+                    <button
+                      type="button"
+                      class="btn btn-sm btn-outline-secondary"
+                    >
+                      Book
+                    </button>
                   </div>
                 </div>
               </div>
             </div>
-            <div class="col">
-              <div class="card shadow-sm shadow-lg p-3 mb-5 bg-body rounded">
-                  <img src="./How-does-Travel-Insurance-Vary-According-to-your-Destination-1-702x336.png" alt="Destination" style="height: 225px; object-fit: cover;">
-    
-                <div class="card-body">
-                  <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. At, quidem perspiciatis est numquam minus libero rem doloremque a maxime. Veritatis sint minima architecto rem deleniti, ab ea doloribus quod aut.
-                  <div class="d-flex justify-content-between align-items-center">
-                    <div class="btn-group">
-                      <button type="button" class="btn btn-sm btn-outline-secondary">Learn more</button>
-                      <button type="button" class="btn btn-sm btn-outline-secondary">Book</button>
-                    </div>
+          </div>
+          <div class="col">
+            <div class="card shadow-sm shadow-lg p-3 mb-5 bg-body rounded">
+              <img
+                src="./How-does-Travel-Insurance-Vary-According-to-your-Destination-1-702x336.png"
+                alt="Destination"
+                style="height: 225px; object-fit: cover"
+              />
+
+              <div class="card-body">
+                <p class="card-text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. At,
+                  quidem perspiciatis est numquam minus libero rem doloremque a
+                  maxime. Veritatis sint minima architecto rem deleniti, ab ea
+                  doloribus quod aut.
+                </p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <button
+                      type="button"
+                      class="btn btn-sm btn-outline-secondary"
+                    >
+                      Learn more
+                    </button>
+                    <button
+                      type="button"
+                      class="btn btn-sm btn-outline-secondary"
+                    >
+                      Book
+                    </button>
                   </div>
                 </div>
               </div>
             </div>
-            <div class="col">
-              <div class="card shadow-sm shadow-lg p-3 mb-5 bg-body rounded">
-                  <img src="./How-does-Travel-Insurance-Vary-According-to-your-Destination-1-702x336.png" alt="Destination" style="height: 225px; object-fit: cover;">
-    
-                <div class="card-body">
-                  <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. At, quidem perspiciatis est numquam minus libero rem doloremque a maxime. Veritatis sint minima architecto rem deleniti, ab ea doloribus quod aut.
-                  <div class="d-flex justify-content-between align-items-center">
-                    <div class="btn-group">
-                      <button type="button" class="btn btn-sm btn-outline-secondary">Learn more</button>
-                      <button type="button" class="btn btn-sm btn-outline-secondary">Book</button>
-                    </div>
+          </div>
+          <div class="col">
+            <div class="card shadow-sm shadow-lg p-3 mb-5 bg-body rounded">
+              <img
+                src="./How-does-Travel-Insurance-Vary-According-to-your-Destination-1-702x336.png"
+                alt="Destination"
+                style="height: 225px; object-fit: cover"
+              />
+
+              <div class="card-body">
+                <p class="card-text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. At,
+                  quidem perspiciatis est numquam minus libero rem doloremque a
+                  maxime. Veritatis sint minima architecto rem deleniti, ab ea
+                  doloribus quod aut.
+                </p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <button
+                      type="button"
+                      class="btn btn-sm btn-outline-secondary"
+                    >
+                      Learn more
+                    </button>
+                    <button
+                      type="button"
+                      class="btn btn-sm btn-outline-secondary"
+                    >
+                      Book
+                    </button>
                   </div>
                 </div>
               </div>
@@ -175,133 +292,300 @@
           </div>
         </div>
       </div>
+    </div>
 
-      <!-- EX5, 8 -->
-      <div class="album py-5 bg-light">
-        <h3 class="text-center py-3 mb-3">Welcome Summer</h3>
+    <!-- EX5, 8 -->
+    <div class="album py-5 bg-light">
+      <h3 class="text-center py-3 mb-3">Welcome Summer</h3>
       <div class="container">
-  
         <div class="row row-cols-sm-2 row-cols-md-3 row-cols-lg-6 g-3">
           <div class="col">
-
             <div class="card shadow-sm position-relative">
-                <img src="./How-does-Travel-Insurance-Vary-According-to-your-Destination-1-702x336.png" alt="Destination" style="height: 225px; object-fit: cover;">
-  
+              <img
+                src="./How-does-Travel-Insurance-Vary-According-to-your-Destination-1-702x336.png"
+                alt="Destination"
+                style="height: 225px; object-fit: cover"
+              />
+
               <div class="card-body">
-                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. At, quidem perspiciatis est numquam minus libero rem doloremque a maxime. Veritatis sint minima architecto rem deleniti, ab ea doloribus quod aut.
+                <p class="card-text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. At,
+                  quidem perspiciatis est numquam minus libero rem doloremque a
+                  maxime. Veritatis sint minima architecto rem deleniti, ab ea
+                  doloribus quod aut.
+                </p>
                 <div class="d-flex justify-content-between align-items-center">
                   <div class="btn-group">
-                    <button type="button" class="btn btn-sm btn-outline-secondary">Learn more</button>
-                    <button type="button" class="btn btn-sm btn-outline-secondary">Book</button>
+                    <button
+                      type="button"
+                      class="btn btn-sm btn-outline-secondary"
+                    >
+                      Learn more
+                    </button>
+                    <button
+                      type="button"
+                      class="btn btn-sm btn-outline-secondary"
+                    >
+                      Book
+                    </button>
                   </div>
                 </div>
               </div>
 
-              <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
-                  HOT
+              <span
+                class="
+                  position-absolute
+                  top-0
+                  start-100
+                  translate-middle
+                  badge
+                  rounded-pill
+                  bg-danger
+                "
+              >
+                HOT
               </span>
-
             </div>
           </div>
           <div class="col">
             <div class="card shadow-sm">
-                <img src="./How-does-Travel-Insurance-Vary-According-to-your-Destination-1-702x336.png" alt="Destination" style="height: 225px; object-fit: cover;">
-  
+              <img
+                src="./How-does-Travel-Insurance-Vary-According-to-your-Destination-1-702x336.png"
+                alt="Destination"
+                style="height: 225px; object-fit: cover"
+              />
+
               <div class="card-body">
-                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. At, quidem perspiciatis est numquam minus libero rem doloremque a maxime. Veritatis sint minima architecto rem deleniti, ab ea doloribus quod aut.
+                <p class="card-text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. At,
+                  quidem perspiciatis est numquam minus libero rem doloremque a
+                  maxime. Veritatis sint minima architecto rem deleniti, ab ea
+                  doloribus quod aut.
+                </p>
                 <div class="d-flex justify-content-between align-items-center">
                   <div class="btn-group">
-                    <button type="button" class="btn btn-sm btn-outline-secondary">Learn more</button>
-                    <button type="button" class="btn btn-sm btn-outline-secondary">Book</button>
+                    <button
+                      type="button"
+                      class="btn btn-sm btn-outline-secondary"
+                    >
+                      Learn more
+                    </button>
+                    <button
+                      type="button"
+                      class="btn btn-sm btn-outline-secondary"
+                    >
+                      Book
+                    </button>
                   </div>
                 </div>
               </div>
 
-              <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
-                  HOT
+              <span
+                class="
+                  position-absolute
+                  top-0
+                  start-100
+                  translate-middle
+                  badge
+                  rounded-pill
+                  bg-danger
+                "
+              >
+                HOT
               </span>
-
             </div>
           </div>
           <div class="col">
             <div class="card shadow-sm">
-                <img src="./How-does-Travel-Insurance-Vary-According-to-your-Destination-1-702x336.png" alt="Destination" style="height: 225px; object-fit: cover;">
-  
+              <img
+                src="./How-does-Travel-Insurance-Vary-According-to-your-Destination-1-702x336.png"
+                alt="Destination"
+                style="height: 225px; object-fit: cover"
+              />
+
               <div class="card-body">
-                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. At, quidem perspiciatis est numquam minus libero rem doloremque a maxime. Veritatis sint minima architecto rem deleniti, ab ea doloribus quod aut.
+                <p class="card-text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. At,
+                  quidem perspiciatis est numquam minus libero rem doloremque a
+                  maxime. Veritatis sint minima architecto rem deleniti, ab ea
+                  doloribus quod aut.
+                </p>
                 <div class="d-flex justify-content-between align-items-center">
                   <div class="btn-group">
-                    <button type="button" class="btn btn-sm btn-outline-secondary">Learn more</button>
-                    <button type="button" class="btn btn-sm btn-outline-secondary">Book</button>
+                    <button
+                      type="button"
+                      class="btn btn-sm btn-outline-secondary"
+                    >
+                      Learn more
+                    </button>
+                    <button
+                      type="button"
+                      class="btn btn-sm btn-outline-secondary"
+                    >
+                      Book
+                    </button>
                   </div>
                 </div>
               </div>
 
-              <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
-                  HOT
+              <span
+                class="
+                  position-absolute
+                  top-0
+                  start-100
+                  translate-middle
+                  badge
+                  rounded-pill
+                  bg-danger
+                "
+              >
+                HOT
               </span>
-
             </div>
           </div>
-          
+
           <div class="col">
             <div class="card shadow-sm">
-                <img src="./How-does-Travel-Insurance-Vary-According-to-your-Destination-1-702x336.png" alt="Destination" style="height: 225px; object-fit: cover;">
-  
+              <img
+                src="./How-does-Travel-Insurance-Vary-According-to-your-Destination-1-702x336.png"
+                alt="Destination"
+                style="height: 225px; object-fit: cover"
+              />
+
               <div class="card-body">
-                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. At, quidem perspiciatis est numquam minus libero rem doloremque a maxime. Veritatis sint minima architecto rem deleniti, ab ea doloribus quod aut.
+                <p class="card-text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. At,
+                  quidem perspiciatis est numquam minus libero rem doloremque a
+                  maxime. Veritatis sint minima architecto rem deleniti, ab ea
+                  doloribus quod aut.
+                </p>
                 <div class="d-flex justify-content-between align-items-center">
                   <div class="btn-group">
-                    <button type="button" class="btn btn-sm btn-outline-secondary">Learn more</button>
-                    <button type="button" class="btn btn-sm btn-outline-secondary">Book</button>
+                    <button
+                      type="button"
+                      class="btn btn-sm btn-outline-secondary"
+                    >
+                      Learn more
+                    </button>
+                    <button
+                      type="button"
+                      class="btn btn-sm btn-outline-secondary"
+                    >
+                      Book
+                    </button>
                   </div>
                 </div>
               </div>
 
-              <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
-                  HOT
+              <span
+                class="
+                  position-absolute
+                  top-0
+                  start-100
+                  translate-middle
+                  badge
+                  rounded-pill
+                  bg-danger
+                "
+              >
+                HOT
               </span>
-
             </div>
           </div>
           <div class="col">
             <div class="card shadow-sm">
-                <img src="./How-does-Travel-Insurance-Vary-According-to-your-Destination-1-702x336.png" alt="Destination" style="height: 225px; object-fit: cover;">
-  
+              <img
+                src="./How-does-Travel-Insurance-Vary-According-to-your-Destination-1-702x336.png"
+                alt="Destination"
+                style="height: 225px; object-fit: cover"
+              />
+
               <div class="card-body">
-                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. At, quidem perspiciatis est numquam minus libero rem doloremque a maxime. Veritatis sint minima architecto rem deleniti, ab ea doloribus quod aut.
+                <p class="card-text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. At,
+                  quidem perspiciatis est numquam minus libero rem doloremque a
+                  maxime. Veritatis sint minima architecto rem deleniti, ab ea
+                  doloribus quod aut.
+                </p>
                 <div class="d-flex justify-content-between align-items-center">
                   <div class="btn-group">
-                    <button type="button" class="btn btn-sm btn-outline-secondary">Learn more</button>
-                    <button type="button" class="btn btn-sm btn-outline-secondary">Book</button>
+                    <button
+                      type="button"
+                      class="btn btn-sm btn-outline-secondary"
+                    >
+                      Learn more
+                    </button>
+                    <button
+                      type="button"
+                      class="btn btn-sm btn-outline-secondary"
+                    >
+                      Book
+                    </button>
                   </div>
                 </div>
               </div>
 
-              <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
-                  HOT
+              <span
+                class="
+                  position-absolute
+                  top-0
+                  start-100
+                  translate-middle
+                  badge
+                  rounded-pill
+                  bg-danger
+                "
+              >
+                HOT
               </span>
-
             </div>
           </div>
           <div class="col">
             <div class="card shadow-sm">
-                <img src="./How-does-Travel-Insurance-Vary-According-to-your-Destination-1-702x336.png" alt="Destination" style="height: 225px; object-fit: cover;">
-  
+              <img
+                src="./How-does-Travel-Insurance-Vary-According-to-your-Destination-1-702x336.png"
+                alt="Destination"
+                style="height: 225px; object-fit: cover"
+              />
+
               <div class="card-body">
-                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. At, quidem perspiciatis est numquam minus libero rem doloremque a maxime. Veritatis sint minima architecto rem deleniti, ab ea doloribus quod aut.
+                <p class="card-text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. At,
+                  quidem perspiciatis est numquam minus libero rem doloremque a
+                  maxime. Veritatis sint minima architecto rem deleniti, ab ea
+                  doloribus quod aut.
+                </p>
                 <div class="d-flex justify-content-between align-items-center">
                   <div class="btn-group">
-                    <button type="button" class="btn btn-sm btn-outline-secondary">Learn more</button>
-                    <button type="button" class="btn btn-sm btn-outline-secondary">Book</button>
+                    <button
+                      type="button"
+                      class="btn btn-sm btn-outline-secondary"
+                    >
+                      Learn more
+                    </button>
+                    <button
+                      type="button"
+                      class="btn btn-sm btn-outline-secondary"
+                    >
+                      Book
+                    </button>
                   </div>
                 </div>
               </div>
 
-              <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
-                  HOT
+              <span
+                class="
+                  position-absolute
+                  top-0
+                  start-100
+                  translate-middle
+                  badge
+                  rounded-pill
+                  bg-danger
+                "
+              >
+                HOT
               </span>
-
             </div>
           </div>
         </div>
@@ -311,115 +595,202 @@
     <!-- Ex6 , EX7 -->
 
     <div class="container-fluid p-4 d-none d-sm-block">
-        <h3 class="text-center py-3 mb-3">Deal of the day</h3>
-        <div class="row">
-            <div class="col-8">
-                <img src="./How-does-Travel-Insurance-Vary-According-to-your-Destination-1-702x336.png" alt="Destination" style="width: 100%; object-fit:cover">
-            </div>
-            <div class="col-4">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis, aliquam cupiditate saepe blanditiis voluptatem illo? Suscipit optio provident necessitatibus, quos impedit voluptates at quibusdam, sint consequatur, doloribus alias aut velit!
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis, aliquam cupiditate saepe blanditiis voluptatem illo? Suscipit optio provident necessitatibus, quos impedit voluptates at quibusdam, sint consequatur, doloribus alias aut velit!
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis, aliquam cupiditate saepe blanditiis voluptatem illo? Suscipit optio provident necessitatibus, quos impedit voluptates at quibusdam, sint consequatur, doloribus alias aut velit!
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis, aliquam cupiditate saepe blanditiis voluptatem illo? Suscipit optio provident necessitatibus, quos impedit voluptates at quibusdam, sint consequatur, doloribus alias aut velit!
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis, aliquam cupiditate saepe blanditiis voluptatem illo? Suscipit optio provident necessitatibus, quos impedit voluptates at quibusdam, sint consequatur, doloribus alias aut velit!
-            </div>
+      <h3 class="text-center py-3 mb-3">Deal of the day</h3>
+      <div class="row">
+        <div class="col-8">
+          <img
+            src="./How-does-Travel-Insurance-Vary-According-to-your-Destination-1-702x336.png"
+            alt="Destination"
+            style="width: 100%; object-fit: cover"
+          />
         </div>
+        <div class="col-4">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis, aliquam
+          cupiditate saepe blanditiis voluptatem illo? Suscipit optio provident
+          necessitatibus, quos impedit voluptates at quibusdam, sint
+          consequatur, doloribus alias aut velit! Lorem ipsum dolor sit amet
+          consectetur adipisicing elit. Quis, aliquam cupiditate saepe
+          blanditiis voluptatem illo? Suscipit optio provident necessitatibus,
+          quos impedit voluptates at quibusdam, sint consequatur, doloribus
+          alias aut velit! Lorem ipsum dolor sit amet consectetur adipisicing
+          elit. Quis, aliquam cupiditate saepe blanditiis voluptatem illo?
+          Suscipit optio provident necessitatibus, quos impedit voluptates at
+          quibusdam, sint consequatur, doloribus alias aut velit! Lorem ipsum
+          dolor sit amet consectetur adipisicing elit. Quis, aliquam cupiditate
+          saepe blanditiis voluptatem illo? Suscipit optio provident
+          necessitatibus, quos impedit voluptates at quibusdam, sint
+          consequatur, doloribus alias aut velit! Lorem ipsum dolor sit amet
+          consectetur adipisicing elit. Quis, aliquam cupiditate saepe
+          blanditiis voluptatem illo? Suscipit optio provident necessitatibus,
+          quos impedit voluptates at quibusdam, sint consequatur, doloribus
+          alias aut velit!
+        </div>
+      </div>
     </div>
 
     <!-- Ex9 -->
 
-
     <div class="album py-5 bg-light">
-        <h3 class="text-center py-3 mb-3">Last Minute</h3>
+      <h3 class="text-center py-3 mb-3">Last Minute</h3>
       <div class="container">
-  
         <div class="row row-cols-sm-2 row-cols-md-3 row-cols-lg-6 g-3">
           <div class="col">
             <div class="card shadow-sm">
-                <img src="./How-does-Travel-Insurance-Vary-According-to-your-Destination-1-702x336.png" alt="Destination" style="height: 225px; object-fit: cover;">
+              <img
+                src="./How-does-Travel-Insurance-Vary-According-to-your-Destination-1-702x336.png"
+                alt="Destination"
+                style="height: 225px; object-fit: cover"
+              />
             </div>
           </div>
           <div class="col">
             <div class="card shadow-sm">
-                <img src="./How-does-Travel-Insurance-Vary-According-to-your-Destination-1-702x336.png" alt="Destination" style="height: 225px; object-fit: cover;">
+              <img
+                src="./How-does-Travel-Insurance-Vary-According-to-your-Destination-1-702x336.png"
+                alt="Destination"
+                style="height: 225px; object-fit: cover"
+              />
             </div>
           </div>
           <div class="col">
             <div class="card shadow-sm">
-                <img src="./How-does-Travel-Insurance-Vary-According-to-your-Destination-1-702x336.png" alt="Destination" style="height: 225px; object-fit: cover;">
+              <img
+                src="./How-does-Travel-Insurance-Vary-According-to-your-Destination-1-702x336.png"
+                alt="Destination"
+                style="height: 225px; object-fit: cover"
+              />
             </div>
           </div>
-          
+
           <div class="col">
             <div class="card shadow-sm">
-                <img src="./How-does-Travel-Insurance-Vary-According-to-your-Destination-1-702x336.png" alt="Destination" style="height: 225px; object-fit: cover;">
+              <img
+                src="./How-does-Travel-Insurance-Vary-According-to-your-Destination-1-702x336.png"
+                alt="Destination"
+                style="height: 225px; object-fit: cover"
+              />
             </div>
           </div>
           <div class="col">
             <div class="card shadow-sm">
-                <img src="./How-does-Travel-Insurance-Vary-According-to-your-Destination-1-702x336.png" alt="Destination" style="height: 225px; object-fit: cover;">
+              <img
+                src="./How-does-Travel-Insurance-Vary-According-to-your-Destination-1-702x336.png"
+                alt="Destination"
+                style="height: 225px; object-fit: cover"
+              />
             </div>
           </div>
           <div class="col">
             <div class="card shadow-sm">
-                <img src="./How-does-Travel-Insurance-Vary-According-to-your-Destination-1-702x336.png" alt="Destination" style="height: 225px; object-fit: cover;">
+              <img
+                src="./How-does-Travel-Insurance-Vary-According-to-your-Destination-1-702x336.png"
+                alt="Destination"
+                style="height: 225px; object-fit: cover"
+              />
             </div>
           </div>
         </div>
       </div>
     </div>
 
-    <!-- Ex10 --> 
-      <div class="album py-5 bg-light">
-        <h3 class="text-center py-3 mb-3">Testimonials</h3>
+    <!-- Ex10 -->
+    <div class="album py-5 bg-light">
+      <h3 class="text-center py-3 mb-3">Testimonials</h3>
       <div class="container">
-  
         <div class="row row-cols-sm-2 row-cols-md-3 row-cols-lg-6 g-3">
           <div class="col">
             <div class="card shadow-sm">
-  
               <div class="card-body">
-                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. At, quidem perspiciatis est numquam minus libero rem doloremque a maxime. Veritatis sint minima architecto rem deleniti, ab ea doloribus quod aut. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Necessitatibus, inventore explicabo nulla debitis, aut laudantium totam itaque cum porro fugiat dicta cumque? Nostrum, quam aliquam necessitatibus itaque vitae rem at?
+                <p class="card-text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. At,
+                  quidem perspiciatis est numquam minus libero rem doloremque a
+                  maxime. Veritatis sint minima architecto rem deleniti, ab ea
+                  doloribus quod aut. Lorem ipsum dolor sit, amet consectetur
+                  adipisicing elit. Necessitatibus, inventore explicabo nulla
+                  debitis, aut laudantium totam itaque cum porro fugiat dicta
+                  cumque? Nostrum, quam aliquam necessitatibus itaque vitae rem
+                  at?
+                </p>
               </div>
             </div>
           </div>
           <div class="col">
             <div class="card shadow-sm">
-  
               <div class="card-body">
-                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. At, quidem perspiciatis est numquam minus libero rem doloremque a maxime. Veritatis sint minima architecto rem deleniti, ab ea doloribus quod aut. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Necessitatibus, inventore explicabo nulla debitis, aut laudantium totam itaque cum porro fugiat dicta cumque? Nostrum, quam aliquam necessitatibus itaque vitae rem at?
+                <p class="card-text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. At,
+                  quidem perspiciatis est numquam minus libero rem doloremque a
+                  maxime. Veritatis sint minima architecto rem deleniti, ab ea
+                  doloribus quod aut. Lorem ipsum dolor sit, amet consectetur
+                  adipisicing elit. Necessitatibus, inventore explicabo nulla
+                  debitis, aut laudantium totam itaque cum porro fugiat dicta
+                  cumque? Nostrum, quam aliquam necessitatibus itaque vitae rem
+                  at?
+                </p>
               </div>
             </div>
           </div>
           <div class="col">
             <div class="card shadow-sm">
-  
               <div class="card-body">
-                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. At, quidem perspiciatis est numquam minus libero rem doloremque a maxime. Veritatis sint minima architecto rem deleniti, ab ea doloribus quod aut. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Necessitatibus, inventore explicabo nulla debitis, aut laudantium totam itaque cum porro fugiat dicta cumque? Nostrum, quam aliquam necessitatibus itaque vitae rem at?
+                <p class="card-text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. At,
+                  quidem perspiciatis est numquam minus libero rem doloremque a
+                  maxime. Veritatis sint minima architecto rem deleniti, ab ea
+                  doloribus quod aut. Lorem ipsum dolor sit, amet consectetur
+                  adipisicing elit. Necessitatibus, inventore explicabo nulla
+                  debitis, aut laudantium totam itaque cum porro fugiat dicta
+                  cumque? Nostrum, quam aliquam necessitatibus itaque vitae rem
+                  at?
+                </p>
               </div>
             </div>
           </div>
           <div class="col">
             <div class="card shadow-sm">
-  
               <div class="card-body">
-                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. At, quidem perspiciatis est numquam minus libero rem doloremque a maxime. Veritatis sint minima architecto rem deleniti, ab ea doloribus quod aut. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Necessitatibus, inventore explicabo nulla debitis, aut laudantium totam itaque cum porro fugiat dicta cumque? Nostrum, quam aliquam necessitatibus itaque vitae rem at?
+                <p class="card-text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. At,
+                  quidem perspiciatis est numquam minus libero rem doloremque a
+                  maxime. Veritatis sint minima architecto rem deleniti, ab ea
+                  doloribus quod aut. Lorem ipsum dolor sit, amet consectetur
+                  adipisicing elit. Necessitatibus, inventore explicabo nulla
+                  debitis, aut laudantium totam itaque cum porro fugiat dicta
+                  cumque? Nostrum, quam aliquam necessitatibus itaque vitae rem
+                  at?
+                </p>
               </div>
             </div>
           </div>
           <div class="col">
             <div class="card shadow-sm">
-  
               <div class="card-body">
-                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. At, quidem perspiciatis est numquam minus libero rem doloremque a maxime. Veritatis sint minima architecto rem deleniti, ab ea doloribus quod aut. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Necessitatibus, inventore explicabo nulla debitis, aut laudantium totam itaque cum porro fugiat dicta cumque? Nostrum, quam aliquam necessitatibus itaque vitae rem at?
+                <p class="card-text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. At,
+                  quidem perspiciatis est numquam minus libero rem doloremque a
+                  maxime. Veritatis sint minima architecto rem deleniti, ab ea
+                  doloribus quod aut. Lorem ipsum dolor sit, amet consectetur
+                  adipisicing elit. Necessitatibus, inventore explicabo nulla
+                  debitis, aut laudantium totam itaque cum porro fugiat dicta
+                  cumque? Nostrum, quam aliquam necessitatibus itaque vitae rem
+                  at?
+                </p>
               </div>
             </div>
           </div>
           <div class="col">
             <div class="card shadow-sm">
-  
               <div class="card-body">
-                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. At, quidem perspiciatis est numquam minus libero rem doloremque a maxime. Veritatis sint minima architecto rem deleniti, ab ea doloribus quod aut. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Necessitatibus, inventore explicabo nulla debitis, aut laudantium totam itaque cum porro fugiat dicta cumque? Nostrum, quam aliquam necessitatibus itaque vitae rem at?
+                <p class="card-text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. At,
+                  quidem perspiciatis est numquam minus libero rem doloremque a
+                  maxime. Veritatis sint minima architecto rem deleniti, ab ea
+                  doloribus quod aut. Lorem ipsum dolor sit, amet consectetur
+                  adipisicing elit. Necessitatibus, inventore explicabo nulla
+                  debitis, aut laudantium totam itaque cum porro fugiat dicta
+                  cumque? Nostrum, quam aliquam necessitatibus itaque vitae rem
+                  at?
+                </p>
               </div>
             </div>
           </div>
@@ -429,58 +800,97 @@
 
     <!-- EX11 -->
     <footer class="container-fluid p-4 mt-3" id="footer">
-        <div class="row">
-            <div class="col-9">
-                <span class="px-3">Tel: 1546466</span>
-                <span class="px-3">Address: Ave.2 </span>
-            </div>
-            <button type="button" class="col-3 =btn btn-primary" data-toggle="modal" data-target="#staticBackdrop">
-                Contact
-            </button>
+      <div class="row">
+        <div class="col-9">
+          <span class="px-3">Tel: 1546466</span>
+          <span class="px-3">Address: Ave.2 </span>
         </div>
-
+        <button
+          type="button"
+          class="col-3 =btn btn-primary"
+          data-toggle="modal"
+          data-target="#staticBackdrop"
+        >
+          Contact
+        </button>
+      </div>
     </footer>
 
     <!-- Ex12 -->
 
     <!-- Ex14, Ex15 -->
-  
-  <div class="modal fade" id="staticBackdrop" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="staticBackdropLabel">Contact form</h5>
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
-          </button>
-        </div>
-        <div class="modal-body">
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nostrum labore architecto eum tempore accusantium maxime placeat. Laudantium cumque inventore illo amet rerum, dolorum culpa praesentium ratione. Nihil esse aut eos.</p>
+
+    <div
+      class="modal fade"
+      id="staticBackdrop"
+      data-backdrop="static"
+      data-keyboard="false"
+      tabindex="-1"
+      aria-labelledby="staticBackdropLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="staticBackdropLabel">Contact form</h5>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nostrum
+              labore architecto eum tempore accusantium maxime placeat.
+              Laudantium cumque inventore illo amet rerum, dolorum culpa
+              praesentium ratione. Nihil esse aut eos.
+            </p>
             <div class="input-group flex-nowrap">
-                <input type="text" class="form-control" placeholder="email" aria-label="email" aria-describedby="addon-wrapping">
-              </div>
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-          <button type="button" class="btn btn-primary">Contact</button>
+              <input
+                type="text"
+                class="form-control"
+                placeholder="email"
+                aria-label="email"
+                aria-describedby="addon-wrapping"
+              />
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-dismiss="modal"
+            >
+              Close
+            </button>
+            <button type="button" class="btn btn-primary">Contact</button>
+          </div>
         </div>
       </div>
     </div>
-  </div>
 
-
-      <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
-<script>
-    function deletAllCards(){
-        let cards = document.getElementsByClassName("card")
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      function deletAllCards() {
+        let cards = document.querySelectorAll(".card");
         for (let card of cards) {
-            card.remove()
+          card.remove();
         }
-    }
-    deletAllCards()
+      }
+      // deletAllCards();
     </script>
-
-</body>
-
+  </body>
 </html>
