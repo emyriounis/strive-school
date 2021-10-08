@@ -87,9 +87,18 @@
       <div class="row" id="teams-list"></div>
     </div>
 
-    <button type="button" class="btn btn-primary" onclick="assign()">
-      Assign
-    </button>
+    <div class="btn-group" role="group" aria-label="Basic example">
+      <button type="button" class="btn btn-primary m-2" onclick="assign()">
+        Assign
+      </button>
+      <button
+        type="button"
+        class="btn btn-primary m-2"
+        onclick="location.reload()"
+      >
+        Reset
+      </button>
+    </div>
 
     <script>
       let input = "";
