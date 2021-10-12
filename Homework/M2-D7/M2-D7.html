@@ -517,6 +517,42 @@
           EX19) Write a function and attach it to the "Older" button, to remove the last Blog Post
           EX20) Write an alert with the name of the author every time the user hover with the mouse over an author name
       */
+
+      const ex11 = () => {
+        let nav = document.querySelector(".nav");
+        let navLink = document.createElement("a");
+        navLink.classList.add("p-2", "text-muted");
+        navLink.href = "#";
+        navLink.innerText = "Link";
+        nav.appendChild(navLink);
+      };
+
+      const ex12 = () => {
+        document.querySelector("h1").style.color = "#a3a34a";
+      };
+
+      const ex13 = () => {
+        document.querySelector(".jumbotron").classList.remove("bg-dark");
+        document.querySelector(".jumbotron").style.backgroundColor = "#652222";
+      };
+      const ex14 = () => {
+        document.querySelector(
+          ".blog-sidebar > div:last-of-type > ol"
+        ).innerHTML = "";
+      };
+
+      const ex15 = () => {
+        document.querySelector(".jumbotron>div").classList.remove("col-md-6");
+        document.querySelector(".jumbotron>div").classList.add("col-md-8");
+      };
+
+      const ex16 = () => {
+        document.querySelector("svg").remove();
+      };
+
+      console.log(
+        document.querySelectorAll(".blog-post > .blog-post-meta > a:hover")
+      );
     </script>
   </body>
 </html>
