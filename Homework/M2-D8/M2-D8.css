@@ -1,0 +1,29 @@
+/* Ex1 */
+
+#ex1 > div {
+  border: 3px solid black;
+  border-radius: 5%;
+}
+
+#firstCol {
+  background-color: green;
+  height: 400px;
+}
+
+#secondCol {
+  background-color: blue;
+}
+
+#thirdCol1 {
+  background-color: #ffff80;
+}
+
+#thirdCol2 {
+  background-color: #ffff00;
+}
+
+#thirdCol3 {
+  background-color: #bbbb00;
+}
+
+/* footer */
