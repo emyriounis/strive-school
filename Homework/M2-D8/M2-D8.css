@@ -1,29 +1,37 @@
 /* Ex1 */
 
-#ex1 > div {
-  border: 3px solid black;
-  border-radius: 5%;
-}
-
 #firstCol {
   background-color: green;
   height: 400px;
+  border: 3px solid black;
+  border-radius: 50px 0 0 50px;
+  flex-grow: 1;
 }
 
 #secondCol {
   background-color: blue;
+  border: 3px solid black;
+  border-right: 0;
+  border-left: 0;
 }
 
 #thirdCol1 {
   background-color: #ffff80;
+  border: 3px solid black;
+  border-bottom: 0;
+  border-left: 0;
+  border-top-right-radius: 50px;
 }
 
 #thirdCol2 {
   background-color: #ffff00;
+  border-right: 3px solid black;
 }
 
 #thirdCol3 {
   background-color: #bbbb00;
+  border: 3px solid black;
+  border-top: 0;
+  border-left: 0;
+  border-bottom-right-radius: 50px;
 }
-
-/* footer */
