@@ -550,9 +550,50 @@
         document.querySelector("svg").remove();
       };
 
-      console.log(
-        document.querySelectorAll(".blog-post > .blog-post-meta > a:hover")
-      );
+      const ex17 = () => {
+        let blogPosts = document.querySelectorAll(".blog-post p:nth-child(3)");
+        for (let i = 0; i < blogPosts.length; i++) {
+          let blog = blogPosts[i];
+          blog.innerText = blog.innerText.substring(150);
+        }
+      };
+
+      const ex18 = (title = "New Post") => {
+        const newBlog = document.querySelector(".blog-main");
+        const nextSibling = document.querySelector(".blog-pagination");
+
+        const newPostDiv = document.createElement("div");
+        newPostDiv.classList.add("blog-post");
+
+        const newPostTitle = document.createElement("h2");
+        newPostTitle.classList.add("blog-post-title");
+        newPostTitle.innerText = title;
+
+        newPostDiv.appendChild(newPostTitle);
+        newBlog.insertBefore(newPostDiv, nextSibling);
+      };
+
+      const ex19 = () => {
+        const btn = document.querySelectorAll(".blog-pagination a")[0];
+        btn.removeAttribute("href");
+        btn.addEventListener("click", function () {
+          const blogs = document.querySelectorAll(".blog-post");
+          blogs[blogs.length - 1].remove();
+        });
+      };
+
+      const ex20 = function () {
+        const authors = document.querySelectorAll(
+          " main .blog-main .blog-post > h2 + p > a"
+        );
+        for (let i = 0; i < authors.length; i++) {
+          let auth = authors[i];
+          auth.addEventListener("mouseenter", function (e) {
+            alert(e.target.innerText);
+          });
+        }
+      };
+      ex20();
     </script>
   </body>
 </html>
