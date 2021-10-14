@@ -1,0 +1,41 @@
+.jumbotron {
+  animation: fadeIn 3s;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+#albums .card {
+  position: relative;
+}
+
+#albums .badge {
+  position: absolute;
+  top: -1%;
+  left: -1%;
+}
+
+.btn-table {
+  opacity: 0;
+  transition: opacity 0.3s ease-in;
+}
+
+.btn-table:hover {
+  opacity: 1;
+}
+
+#addTrack {
+  border: 1px solid black;
+  box-shadow: 0;
+  transition: box-shadow 0.5s;
+}
+
+#addTrack:hover {
+  box-shadow: 0 0 10px black;
+}
