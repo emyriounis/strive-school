@@ -1,7 +1,7 @@
 /* Ex1 */
 
 #firstCol {
-  background-color: green;
+  background-color: #00aa00;
   height: 400px;
   border: 3px solid black;
   border-radius: 50px 0 0 50px;
@@ -9,7 +9,7 @@
 }
 
 #secondCol {
-  background-color: blue;
+  background-color: #0000ff;
   border: 3px solid black;
   border-right: 0;
   border-left: 0;
@@ -29,7 +29,7 @@
 }
 
 #thirdCol3 {
-  background-color: #bbbb00;
+  background-color: #cccc00;
   border: 3px solid black;
   border-top: 0;
   border-left: 0;
