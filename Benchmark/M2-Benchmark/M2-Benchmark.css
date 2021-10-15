@@ -1,0 +1,8 @@
+body {
+  background-color: #ddd;
+}
+
+#logo {
+  height: 32px;
+  border-radius: 10%;
+}
