@@ -6,3 +6,90 @@ body {
   height: 32px;
   border-radius: 10%;
 }
+
+#highlights > h5 {
+  border-bottom: 1px solid grey;
+}
+
+#highlights .carousel-item {
+  height: 33vw;
+}
+
+#highlights .carousel-item img {
+  object-fit: cover;
+}
+
+#highlights .carousel-caption {
+  text-shadow: 1px 1px 1px #000;
+}
+
+.card img {
+  height: 150px;
+  object-fit: cover;
+}
+
+.card-body {
+  height: 120px;
+}
+
+#carousel-fouter {
+  border-top: 1px solid grey;
+  border-bottom: 1px solid grey;
+}
+
+#percentIcon {
+  background-color: gray;
+  border: 3px solid gray;
+  border-radius: 50%;
+}
+
+#salesCarousel .card {
+  height: 450px;
+}
+
+#salesCarousel .card img {
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.6;
+}
+
+#salesCarousel .card {
+  text-shadow: 1px 1px 1px #000;
+}
+
+#salesCarousel .card .percentage {
+  font-size: 2em;
+}
+
+#build > h5 {
+  border-bottom: 1px solid grey;
+}
+
+#what > h5 {
+  border-bottom: 1px solid grey;
+}
+
+#what .carousel-item {
+  /* height: 450px; */
+}
+
+#whatCarousel .card {
+  height: 225px;
+}
+
+#what .carousel-item img {
+  object-fit: cover;
+}
+
+#what .carousel-caption {
+  text-shadow: 1px 1px 1px #000;
+}
+
+#logo2 {
+  height: 54px;
+  border-radius: 10%;
+}
+
+#logoText {
+  font-size: 0.7em;
+}
