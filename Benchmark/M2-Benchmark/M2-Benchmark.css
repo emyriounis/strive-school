@@ -69,10 +69,6 @@ body {
   border-bottom: 1px solid grey;
 }
 
-#what .carousel-item {
-  /* height: 450px; */
-}
-
 #whatCarousel .card {
   height: 225px;
 }
@@ -92,4 +88,57 @@ body {
 
 #logoText {
   font-size: 0.7em;
+}
+
+#recommendedCarousel > h5 {
+  border-bottom: 1px solid grey;
+}
+
+#recommendedCarouselIn .card {
+  height: 300px;
+}
+
+#what > h5 {
+  border-bottom: 1px solid grey;
+}
+
+#whatCarouselIn .card {
+  height: 300px;
+}
+
+#whatCarouselIn #whatFirstCard {
+  height: calc(600px + 2rem);
+}
+
+#whatCarouselIn #whatFirstCard img {
+  height: calc(450px + 2rem);
+}
+
+#discover > .row > div > h5 {
+  border-bottom: 1px solid grey;
+}
+
+#discover .discoverImg {
+  width: 150px;
+  height: 70px;
+  object-fit: cover;
+}
+
+#discover .featuredImg {
+  width: 100%;
+  object-fit: cover;
+  padding: 1px;
+}
+
+#news > h5 {
+  border-bottom: 1px solid grey;
+}
+
+#news .card {
+  text-shadow: 1px 1px 1px #000;
+}
+
+#news .card img {
+  height: 300px;
+  object-fit: cover;
 }
