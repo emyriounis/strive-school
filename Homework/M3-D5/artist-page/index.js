@@ -235,7 +235,7 @@ fetch("https://striveschool-api.herokuapp.com/api/deezer/search?q=eminem")
     document.getElementById("popular-cards").innerHTML = body.data
       .map((song) => {
         return `
-        <a class="card card-popular-release flex-column align-items-center" 
+        <a class="card card-popular-release flex-column align-items-center mt-3" 
             style="text-decoration: none;" 
             href="../album-page/album.html">
               <img class="album-img pt-3" src="${song.album.cover_medium}" class="card-img-top rounded" alt="...">
