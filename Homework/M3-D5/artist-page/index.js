@@ -25,6 +25,9 @@ function on() {
 function off() {
   document.getElementById("overlay").style.display = "none";
 }
+
+
+
 fetch("https://striveschool-api.herokuapp.com/api/deezer/search?q=eminem")
   .then((res) => res.json())
   .then((body) => {
@@ -213,7 +216,7 @@ fetch("https://striveschool-api.herokuapp.com/api/deezer/search?q=eminem")
             <img class="" src="${body.data[0].artist.picture}" class="img-fluid col-lg-12 mx-3" style="width: 100px; height: 100px; object-fit: scale-down;" alt="...">
             <div class="flex-column align-items-end">
                 <div class="d-flex align-items-center justify-content-between col-lg-12 pl-n4">
-                    <img src="artist-assets/original.jpeg" class="img-fluid rounded-circle mx-3" style="width: 40px; height: 40px;" alt="...">
+                    <img src="${body.data[0].artist.picture}" class="img-fluid rounded-circle mx-3" style="width: 40px; height: 40px;" alt="...">
                     <p class="artistpick-text-p1 m-0">Posted by ${body.data[0].artist.name}</p>
                 </div>
                 <p class="artistpick-text-p pl-4 mb-0 mt-3" >Tool Best Of</p>
