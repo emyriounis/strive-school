@@ -17,25 +17,34 @@ let menuButtonNav = document
   .getElementById("menuButtonNav")
   .addEventListener("click", () => navVisibility());
 
-fetch("https://striveschool-api.herokuapp.com/api/deezer/search?q=queen")
+const urlSearchParams = new URLSearchParams(window.location.search);
+const params = Object.fromEntries(urlSearchParams.entries());
+
+fetch(
+  `https://striveschool-api.herokuapp.com/api/deezer/search?q=${
+    params.query ? params.query : "queen"
+  }`
+)
   .then((resp) => resp.json())
   .then((data) => {
     document.getElementById("goodCards").innerHTML = data.data
       .map((song) => {
         return `
-    <div class="music-card mx-2"  id="cardHover" onmouseover="mouseOver('linear-gradient(180deg, rgb(28, 4, 83) 0%, rgb(0, 0, 0) 35%)')" onmouseout="mouseOut() ">
-      <div class="media d-flex">
-        <img
-          src="${song.album.cover_medium}"
-          class="mr-3 img-fluid img1"
-          alt="..."
-        />
-        <div class="media-body bodyHover d-flex align-self-center">
-          <h6 class="mt-0">${song.title}</h6>
-          <h6 class="card-title ml-3"><i class="bi bi-play-circle-fill playHover"></i></h6>
+    <a class="text-white" href="../album-page/album.html?album=${song.album.id}"
+      <div class="music-card mx-2"  id="cardHover" onmouseover="mouseOver('linear-gradient(180deg, rgb(28, 4, 83) 0%, rgb(0, 0, 0) 35%)')" onmouseout="mouseOut() ">
+        <div class="media d-flex">
+          <img
+            src="${song.album.cover_medium}"
+            class="mr-3 img-fluid img1"
+            alt="..."
+          />
+          <div class="media-body bodyHover d-flex align-self-center">
+            <h6 class="mt-0">${song.title}</h6>
+            <h6 class="card-title ml-3"><i class="bi bi-play-circle-fill playHover"></i></h6>
+          </div>
         </div>
       </div>
-    </div>
+    </a>
       `;
       })
       .join("");
@@ -49,7 +58,7 @@ fetch(
     document.getElementById("recentCards").innerHTML = data.data
       .map((song) => {
         return `
-          <a href="../album-page/album.html" class="col-sm-6 col-md-3 col-lg-2 mb-3 px-0">
+          <a href="../album-page/album.html?album=${song.album.id}" class="col-sm-6 col-md-3 col-lg-2 mb-3 px-0">
             <div class="card cardwrap mx-2 h-100 bg-dark border-dark">
               <img
                 src="${song.album.cover_medium}"
@@ -81,7 +90,7 @@ fetch("https://striveschool-api.herokuapp.com/api/deezer/search?q=eminem")
     document.getElementById("showsCards").innerHTML = data.data
       .map((song) => {
         return `
-          <a href="../album-page/album.html" class="col-sm-6 col-md-3 col-lg-2 mb-3 px-0">
+          <a href="../album-page/album.html?album=${song.album.id}" class="col-sm-6 col-md-3 col-lg-2 mb-3 px-0">
             <div class="card cardwrap mx-2 h-100 bg-dark border-dark">
               <img
                 src="${song.album.cover_medium}"
@@ -120,3 +129,8 @@ fetch("https://striveschool-api.herokuapp.com/api/deezer/search?q=eminem")
       })
       .join("");
   });
+
+const inputChange = () => document.getElementById("searchInput").value;
+
+const search = () =>
+  window.location.replace(`../home-page/Home-Page.html?query=${inputChange()}`);
