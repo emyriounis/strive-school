@@ -229,4 +229,57 @@ fetch("https://striveschool-api.herokuapp.com/api/deezer/search?q=eminem")
     
   });
   
+  fetch("https://striveschool-api.herokuapp.com/api/deezer/search?q=eminem")
+  .then((res) => res.json())
+  .then((body) => {
+    document.getElementById("popular-cards").innerHTML = body.data
+      .map((song) => {
+        return `
+        <a class="card card-popular-release flex-column align-items-center" 
+            style="text-decoration: none;" 
+            href="../album-page/album.html">
+              <img class="album-img pt-3" src="${song.album.cover_medium}" class="card-img-top rounded" alt="...">
+              <div class="card-body  d-flex align-items-start justify justify-content-between" style="width: 212px;">
+                  <div class="card-text">
+                      <h6 class="text-white" >  <strong>${song.title} </strong></h6>
+                      <p class="card-album-text">2006<span> &middot; </span> Album</p>
+                  </div>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-play-circle-fill playButton" viewBox="0 0 16 16">
+                    <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM6.79 5.093A.5.5 0 0 0 6 5.5v5a.5.5 0 0 0 .79.407l3.5-2.5a.5.5 0 0 0 0-.814l-3.5-2.5z"/>
+                    </svg>
+              </div>
+            </a>
+      `;
+      })
+      .join("");
+  });
+  fetch("https://striveschool-api.herokuapp.com/api/deezer/search?q=eminem")
+  .then((res) => res.json())
+  .then((body) => {
+    document.getElementById("albumsid").innerHTML = body.data
+      .map((song) => {
+        return `
+        
+  <a class="seemore-link-text mt-4 mr-5 d-flex" href="">SEE DISCOGRAPHY</a>
+        </div>
+        <div class="d-flex justify-content-around flex-wrap px-2 mt-5">
+          <a class="card card-popular-release flex-column align-items-center" 
+          style="text-decoration: none;" 
+          href="../album-page/album.html">
+            <img class="album-img pt-3" src="${song.album.cover_medium}" class="card-img-top rounded" alt="...">
+            <div class="card-body  d-flex align-items-start justify justify-content-between" style="width: 212px;">
+                <div class="card-text">
+                    <h6 class="text-white"> <strong> ${song.title}</strong></h6>
+                    <p class="card-album-text">2006 <span> &middot; </span> Album</p>
 
+                </div>
+                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-play-circle-fill playButton" viewBox="0 0 16 16">
+                  <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM6.79 5.093A.5.5 0 0 0 6 5.5v5a.5.5 0 0 0 .79.407l3.5-2.5a.5.5 0 0 0 0-.814l-3.5-2.5z"/>
+                  </svg>
+            </div>
+
+          </a>
+      `;
+      })
+      .join("");
+  });
