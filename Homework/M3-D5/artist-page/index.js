@@ -18,6 +18,9 @@ const navVisibility = () => {
 //   .getElementById("menuButtonNav")
 //   .addEventListener("click", () => navVisibility());
 
+const urlSearchParams = new URLSearchParams(window.location.search);
+const params = Object.fromEntries(urlSearchParams.entries());
+
 function on() {
   document.getElementById("overlay").style.display = "block";
 }
@@ -26,13 +29,14 @@ function off() {
   document.getElementById("overlay").style.display = "none";
 }
 
-
-
-fetch("https://striveschool-api.herokuapp.com/api/deezer/search?q=eminem")
-  .then((res) => res.json())
-  .then((body) => {
-    document.getElementById("jumbo").innerHTML =
-       `
+let artistName = "eminem";
+const fetch1 = () =>
+  fetch(
+    `https://striveschool-api.herokuapp.com/api/deezer/artist/${params.artist}`
+  )
+    .then((res) => res.json())
+    .then((body) => {
+      document.getElementById("jumbo").innerHTML = `
        <div class="container-fluid d-flex flex-column justify-content-between sticky-top p-1 p-sm-2 p-md-3">
        <div
            class="d-sm-flex justify-content-between align-items-center"
@@ -160,40 +164,48 @@ fetch("https://striveschool-api.herokuapp.com/api/deezer/search?q=eminem")
                </div>
            </div>
            <h1 class="title-text pl-4">
-               ${body.data[0].artist.name}
+               ${body.name}
            </h1>
            <p class="title-text-monthly-listen pl-4"> 
                3,420,500 monthly listeners
            </p>
        </div>
       `;
-     
-    document.getElementById("jumbo").style.backgroundImage =`url(${body.data[0].artist.picture})`
-     
-  });
 
-  fetch("https://striveschool-api.herokuapp.com/api/deezer/search?q=eminem")
-  .then((res) => res.json())
-  .then((body) => {
-    document.getElementById("artist-table").innerHTML = body.data
-      .map((song) => {
-        return `
+      document.getElementById(
+        "jumbo"
+      ).style.backgroundImage = `url(${body.picture})`;
+
+      artistName = body.name;
+      fetch2();
+      fetch3();
+      fetch4();
+      fetch5();
+    });
+
+const fetch2 = () =>
+  fetch(
+    `https://striveschool-api.herokuapp.com/api/deezer/search?q=${artistName}`
+  )
+    .then((res) => res.json())
+    .then((body) => {
+      document.getElementById("artist-table").innerHTML = body.data
+        .map((song, index) => {
+          return `
         <tr class="tracklist-row"> 
         <th  scope="row" colspan="4" class="track-title-text">
-            <svg  class="playing-progres-icon" xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor" class="bi bi-bar-chart-line" viewBox="0 0 16 16">
-            <path d="M11 2a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v12h.5a.5.5 0 0 1 0 1H.5a.5.5 0 0 1 0-1H1v-3a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v3h1V7a1 1 0 0 1 1-1h2a1 1 0 0 1 1 
-            1v7h1V2zm1 12h2V2h-2v12zm-3 0V7H7v7h2zm-5 0v-3H2v3h2z"/>
-            </svg>
-            <img src="${song.album.cover_medium}" class="img-fluid mx-3" style="height: 40px; height: 40px;" alt="...">
+            ${index + 1}
+            <img src="${
+              song.album.cover_medium
+            }" class="img-fluid mx-3" style="height: 40px; height: 40px;" alt="...">
             ${song.title}</th>
-        <td class="viewed-text pl-5 pt-4" colspan="2">${song.rank}</td>
         <td class="viewed-text pt-4">
             <svg class="like-song-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-heart" viewBox="0 0 16 16">
             <path d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 
             5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 
             1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z"/>
             </svg>
-            ${song.duration}
+            ${secTr(song.duration)}
             <svg class="dropdown-song-menu" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-activity" viewBox="0 0 16 16">
             <path fill-rule="evenodd" clip-rule="evenodd" d="M6 2a.5.5 0 0 1 .47.33L10 12.036l1.53-4.208A.5.5 0 0 1 12 7.5h3.5a.5.5 0 0 1 0 1h-3.15l-1.88 5.17a.5.5 0 0 1-.94 0L6 3.964 
             4.47 8.171A.5.5 0 0 1 4 8.5H.5a.5.5 0 0 1 0-1h3.15l1.88-5.17A.5.5 0 0 1 6 2Z" fill="#000"/>
@@ -201,14 +213,18 @@ fetch("https://striveschool-api.herokuapp.com/api/deezer/search?q=eminem")
         </td>
     </tr>
       `;
-      })
-      .join("");
-  });
-  fetch("https://striveschool-api.herokuapp.com/api/deezer/search?q=eminem")
-  .then((res) => res.json())
-  .then((body) => {
-    document.getElementById("artist-pick").innerHTML =
-    `
+        })
+        .join("");
+    })
+    .catch((error) => console.log(error));
+
+const fetch3 = () =>
+  fetch(
+    `https://striveschool-api.herokuapp.com/api/deezer/search?q=${artistName}`
+  )
+    .then((res) => res.json())
+    .then((body) => {
+      document.getElementById("artist-pick").innerHTML = `
       
         <div class="col-md-12 col-lg-3 pl-4">
         <h4 class="text-white col-lg-12 my-4">Artist's pick</h4>
@@ -225,19 +241,20 @@ fetch("https://striveschool-api.herokuapp.com/api/deezer/search?q=eminem")
         </div>
     </div>
       `;
-      
-    
-  });
-  
-  fetch("https://striveschool-api.herokuapp.com/api/deezer/search?q=eminem")
-  .then((res) => res.json())
-  .then((body) => {
-    document.getElementById("popular-cards").innerHTML = body.data
-      .map((song) => {
-        return `
+    });
+
+const fetch4 = () =>
+  fetch(
+    `https://striveschool-api.herokuapp.com/api/deezer/search?q=${artistName}`
+  )
+    .then((res) => res.json())
+    .then((body) => {
+      document.getElementById("popular-cards").innerHTML = body.data
+        .map((song) => {
+          return `
         <a class="card card-popular-release flex-column align-items-center mt-3" 
             style="text-decoration: none;" 
-            href="../album-page/album.html">
+            href="../album-page/album.html?album=${song.album.id}">
               <img class="album-img pt-3" src="${song.album.cover_medium}" class="card-img-top rounded" alt="...">
               <div class="card-body  d-flex align-items-start justify justify-content-between" style="width: 212px;">
                   <div class="card-text">
@@ -250,15 +267,19 @@ fetch("https://striveschool-api.herokuapp.com/api/deezer/search?q=eminem")
               </div>
             </a>
       `;
-      })
-      .join("");
-  });
-  fetch("https://striveschool-api.herokuapp.com/api/deezer/search?q=eminem")
-  .then((res) => res.json())
-  .then((body) => {
-    document.getElementById("albumsid").innerHTML = body.data
-      .map((song) => {
-        return `
+        })
+        .join("");
+    });
+
+const fetch5 = () =>
+  fetch(
+    `https://striveschool-api.herokuapp.com/api/deezer/search?q=${artistName}`
+  )
+    .then((res) => res.json())
+    .then((body) => {
+      document.getElementById("albumsid").innerHTML = body.data
+        .map((song) => {
+          return `
         
   <a class="seemore-link-text mt-4 mr-5 d-flex" href="">SEE DISCOGRAPHY</a>
         </div>
@@ -280,6 +301,16 @@ fetch("https://striveschool-api.herokuapp.com/api/deezer/search?q=eminem")
 
           </a>
       `;
-      })
-      .join("");
-  });
+        })
+        .join("");
+    });
+
+const secTr = (duration) => {
+  let total = duration;
+  let minute = Math.floor(total / 60);
+  let second = total % 60;
+  second < 10 && (second = `0${second}`);
+  return `${minute}:${second}`;
+};
+
+fetch1();
