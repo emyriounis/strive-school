@@ -314,3 +314,22 @@ const secTr = (duration) => {
 };
 
 fetch1();
+
+fetch("https://striveschool-api.herokuapp.com/api/deezer/search?q=eminem")
+  .then((resp) => resp.json())
+  .then((data) => {
+    document.getElementById("albumsList").innerHTML = data.data
+      .map((song) => {
+        return `
+        <li class="row">
+          <a href="${song.link}" class="col-12 px-3 py-1">${song.title}</a>
+        </li>
+      `;
+      })
+      .join("");
+  });
+
+const inputChange = () => document.getElementById("searchInput").value;
+
+const search = () =>
+  window.location.replace(`../home-page/Home-Page.html?query=${inputChange()}`);
