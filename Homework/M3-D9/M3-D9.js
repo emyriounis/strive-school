@@ -37,9 +37,14 @@ window.onload = async () => {
             />
           </td>
           <td>${item.price}</td>
+          <td>
+            <a href="./product/product.html?p=${item._id}">View Details</a>
+          </td>
         </tr>`
       )
       .join("");
+    document.getElementById("spinner").classList.add("d-none");
+    document.querySelector("table").classList.remove("d-none");
   } catch (error) {
     alert(error);
   }
