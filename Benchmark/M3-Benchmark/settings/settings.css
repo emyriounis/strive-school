@@ -1,0 +1,78 @@
+/* NAVBAR STYLE */
+
+nav {
+    background-color: #222;
+}
+
+.netflix-red {
+    color: #E50914;
+}
+
+.navbar-bg-black {
+    background-color: #222;
+}
+
+.netflix-logo {
+    height: 50px;
+}
+
+.profile-type {
+    color: #ffffff80
+}
+
+.profile-type:hover {
+    color: #ffffffcc;
+    cursor: pointer;
+}
+
+.drop-down-avatar {
+    height: 35px;
+}
+
+.dropdown-toggle {
+    color: #fff;
+}
+
+.dropdown-toggle:hover {
+    color: #fff;
+}
+
+
+/* SETTINGS */
+/* ACCOUNT + MEMBERSHIP & BILLING*/
+
+h2 {
+    font-weight: normal;
+}
+
+.grey-text {
+    color: #afafaf;
+}
+
+.dark-grey-text {
+    color: #4d4d4d;
+}
+
+.border-top-grey {
+    border-top: 2px solid #afafaf;
+}
+
+.grey-btn {
+    background-color: #ebe7e7;
+}
+
+.grey-btn:hover {
+    background-color: #cccccc;
+}
+
+.profile-avatar {
+    height: 30px;
+}
+
+.ultra-hd {
+    height: 10px;
+}
+
+.pay-pal-logo {
+    height: 20px;
+}

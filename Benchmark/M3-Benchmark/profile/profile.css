@@ -1,0 +1,46 @@
+body {
+  background: black;
+}
+
+.navbar {
+  background: black;
+}
+
+#main {
+  max-width: 500px;
+  margin: auto;
+}
+
+.bg-black {
+  background: black;
+}
+
+#icon {
+  width: 30px;
+  height: 30px;
+  border-radius: 20px;
+  background-color: black;
+  border: 1px solid white;
+  position: absolute;
+  top: 110px;
+  left: 20px;
+}
+
+#profilePic {
+  position: relative;
+}
+
+#maturityRatings {
+  width: fit-content;
+}
+
+@media (max-width: 500px) {
+  #icon {
+    top: 21vw;
+    left: 20%;
+  }
+  #svgIcon {
+    width: 10px;
+    height: 10px;
+  }
+}

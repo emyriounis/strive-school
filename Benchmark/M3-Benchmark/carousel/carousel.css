@@ -1,0 +1,28 @@
+body{
+    background-color:rgb(44, 43, 43)
+} 
+h4 ,h1{
+    color: wheat;
+}
+.prime-logo{
+  position: absolute;
+  top: 0;
+  left: 0;
+  max-width: 25%;
+  border-radius: 8px;
+}
+.h1{
+    font-size: 30px;
+    padding-top: 15px;
+    padding-bottom:15px
+
+}
+span{
+    color:cadetblue
+}
+.images{
+width: 200px;
+height: 200px;
+object-fit: cover;
+border-radius: 8px;
+}
