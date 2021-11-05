@@ -1,7 +1,28 @@
-const getData = async () => {
+const getData = async (genre = "comedy") => {
   try {
     const responce = await fetch(
-      "https://striveschool-api.herokuapp.com/api/movies/comedy",
+      `https://striveschool-api.herokuapp.com/api/movies/${genre}`,
+      {
+        headers: {
+          Authorization:
+            "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MTgyOGVjZmFhY2FhMjAwMTU1MmExN2MiLCJpYXQiOjE2MzU5NDYxOTEsImV4cCI6MTYzNzE1NTc5MX0.Nlyj9HHBZ_rBlsOlnyfINlvAPFFeHyVqunKdfoHSoL0",
+        },
+      }
+    );
+    if (!responce.ok) {
+      throw new Error("fail to fetch");
+    }
+    // console.log(responce.json());
+    return responce.json();
+  } catch (error) {
+    throw new Error(error);
+  }
+};
+
+const getGenre = async () => {
+  try {
+    const responce = await fetch(
+      `https://striveschool-api.herokuapp.com/api/movies/`,
       {
         headers: {
           Authorization:
@@ -68,10 +89,20 @@ const getData = async () => {
 
 window.onload = async () => {
   await displayData();
+
+  const genre = await getGenre();
+  console.log(genre);
+  document.getElementById("genrePlace").innerHTML = genre
+    .map(
+      (g) => `
+        <a class="dropdown-item" onclick="displayData('${g}')">${g}</a>
+  `
+    )
+    .join("");
 };
 
-const displayData = async () => {
-  const data = await getData();
+const displayData = async (genre) => {
+  const data = await getData(genre);
   document.getElementById("trending").innerHTML = data
     .map(
       (movie) => `
