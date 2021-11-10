@@ -9,6 +9,9 @@ class BookList extends Component {
   state = {
     query: "",
   };
+  filterBookList(query) {
+    return this.props.books.filter((book) => book.title.includes(query));
+  }
   render() {
     return (
       <Container>
@@ -25,8 +28,8 @@ class BookList extends Component {
           </Form.Group>
         </Form>
         <Row>
-          {this.props.books.map((book) => (
-            <Col xs={12} md={6} xl={4}>
+          {this.filterBookList(this.state.query).map((book) => (
+            <Col key={book.asin} xs={12} md={6} xl={4} className="p-3">
               <SingleBook title={book.title} img={book.img} />
             </Col>
           ))}
