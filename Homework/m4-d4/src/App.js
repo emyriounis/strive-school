@@ -1,18 +1,11 @@
 import "bootstrap/dist/css/bootstrap.min.css";
-import MyNav from "./components/MyNav";
-import Welcome from "./components/Welcome";
-import LatestRelease from "./components/LatestRelease";
-import MyFooter from "./components/MyFooter";
+import BookList from "./components/BookList";
+import data from "./assets/books.json";
 
-const App = () => {
-  return (
-    <>
-      <MyNav />
-      <Welcome />
-      <LatestRelease />
-      <MyFooter />
-    </>
-  );
-};
+const App = () => (
+  <>
+    <BookList books={data} />
+  </>
+);
 
 export default App;
