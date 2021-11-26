@@ -1,0 +1,20 @@
+.text-grey-smaller {
+  color: #a0a0a0;
+  font-size: 0.8em;
+  text-shadow: 0px 0px 30px rgba(0, 0, 0, 0.4);
+}
+
+.albumImage {
+  box-shadow: 5px 5px 50px 10px rgba(0, 0, 0, 0.4);
+  width: 100%;
+  height: 100%;
+  max-width: 250px;
+  max-height: 250px;
+  object-fit: cover;
+}
+
+.albumPlayButton {
+  border-radius: 50px;
+  font-size: 0.8em;
+  font-weight: 700;
+}
