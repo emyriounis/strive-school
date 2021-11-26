@@ -1,0 +1,54 @@
+.newPost {
+  border: 1px solid lightgray;
+  border-radius: 10px;
+}
+
+.newPostProfileImg {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+}
+
+.newPostStartPostButton {
+  width: 100%;
+  border-radius: 30px;
+}
+
+.newPostCategory:hover {
+  width: fit-content;
+  background: lightgray;
+  border-radius: 3px;
+}
+
+.hashtagButton {
+  border: none;
+}
+
+.hashtagButton:hover {
+  opacity: 0.5;
+}
+
+.newPostIcons {
+  opacity: 0.7;
+}
+
+.newPostCategoryText {
+  font-weight: 700;
+}
+
+.newPostBottomIcons {
+  width: fit-content;
+  border-radius: 50px;
+}
+
+.newPostBottomIcons:hover {
+  background-color: lightgray;
+}
+
+.border-right {
+  border-right: 1px solid lightgray;
+}
+
+.post-button {
+  border-radius: 50px;
+}

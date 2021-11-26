@@ -1,0 +1,150 @@
+#experience-form-modal {
+    margin-top: 8%;
+    min-width: 60vw;
+}
+.modal-title {
+    font-size: 1.2rem;
+}
+
+h6 {
+    font-weight: 700;
+}
+.alert {
+    background-color: #EEF3F8;
+    font-size: 0.9rem;
+}
+
+#employment-type-link {
+    font-size: 1.2rem;
+}
+
+#industry-disclaimer, #characterCount {
+    font-size: 0.9rem;
+    opacity: 0.7;
+}
+
+#delete-experience-btn {
+    background-color: transparent;
+    border: none;
+    color: #5E5E5E;
+    font-weight: 700;
+    font-size: 1rem;
+}
+
+#delete-experience-btn:hover {
+    background-color: #e7e7e7;
+}
+
+#save-experience-btn {
+    border-radius: 20px;
+    background-color: #0a66c2; 
+    border: none;
+    font-weight: 800;
+}
+
+#save-experience-btn:hover {
+    background-color: #014d99;
+}
+
+#plus-icon-open-edit-form, #pencil-icon-open-edit-form {
+    color: #666666;
+}
+
+@keyframes blip {
+    0% {
+        background-color: white;
+    }
+    30% {
+        background-color: #e7e7e7;
+    }
+    100% {
+        background-color: white;
+    }
+}
+
+#plus-icon-open-edit-form:hover {
+    border-radius: 50%;
+    animation: blip 0.5s;
+}
+
+#pencil-icon-open-edit-form:hover {
+    border-radius: 50%;
+    background-color: #e7e7e7;
+}
+
+#choose-file-btn {
+    display: none;
+}
+
+#choose-file-label {
+    color: #0a66c2;
+    border-radius: 20px;
+    font-weight: 700;
+    font-size: 1rem;
+    border-color: #0a66c2;
+    padding: 5px 14px;
+}
+
+#choose-file-label:hover {
+    border-width: 2px;
+    background-color: #0073b13a;
+    padding: 4px 13px;
+}
+
+#plus-icon-add-media {
+    transform: translateY(-8%);
+}
+.form-label {
+    font-size: 0.95rem;
+    color: #5a5a5a;
+}
+
+#on-btn-disabled, #off-btn-disabled {
+    opacity: 0.3;
+}
+
+/* checkbox styles*/
+
+  [type="checkbox"]:not(:checked),
+  [type="checkbox"]:checked {
+    position: absolute;
+    left: 0;
+    opacity: 0.01;
+  }
+
+  [type="checkbox"]:not(:checked) + label,
+  [type="checkbox"]:checked + label {
+      position: relative;
+      cursor: pointer;
+      padding-left: 40px;
+  }
+
+  [type="checkbox"]:not(:checked) + label:before,
+  [type="checkbox"]:checked + label:before {
+      content: '';
+      position: absolute;
+      width: 32px;
+      height: 32px;
+      border: 2px solid #014d99;
+      border-radius: 4px;
+      left: 0;
+      top: 0;
+      transform: translateY(-12%);
+  }
+
+  [type="checkbox"]:checked + label:before {
+      border: 1px solid #014d999c;
+  }
+
+    [type="checkbox"]:checked + label:after {
+      content: 'x';
+      position: absolute;
+      left: 0.15em;
+      top: -0.13em;
+      font-size: 1.1rem;
+      font-weight: 600;
+      color: white;
+      background-color: #047642;
+      padding: 1px 9px;
+      border-radius: 2px;
+  }
