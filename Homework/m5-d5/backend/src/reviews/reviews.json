@@ -1,0 +1,106 @@
+[
+  {
+    "id": "54ek0kwqhxb98",
+    "comment": "Edited product review!",
+    "rate": 3,
+    "productId": "l2i3fhqo9283fb",
+    "createdAt": "2021-12-03T14:42:24.956Z",
+    "updatedAt": "2021-12-03T15:07:46.835Z"
+  },
+  {
+    "id": "54ek0kwqhxg9v",
+    "comment": "Great product!",
+    "rate": 3,
+    "productId": "l2i3fhqo9283fb",
+    "createdAt": "2021-12-03T14:42:31.459Z",
+    "updatedAt": "2021-12-03T14:42:31.459Z"
+  },
+  {
+    "id": "54ek0kwqhxvv8",
+    "comment": "Epic product!",
+    "rate": 5,
+    "productId": "l2i3fhqo9af283gf",
+    "createdAt": "2021-12-03T14:42:51.668Z",
+    "updatedAt": "2021-12-03T14:42:51.668Z"
+  },
+  {
+    "id": "54ek0kwqhy3vo",
+    "comment": "Will use this a lot!",
+    "rate": 5,
+    "productId": "l2i3fhqo9af283gf",
+    "createdAt": "2021-12-03T14:43:02.052Z",
+    "updatedAt": "2021-12-03T14:43:02.052Z"
+  },
+  {
+    "id": "54ek0kwqhyy77",
+    "comment": "Why did I buy this!",
+    "rate": 1,
+    "productId": "l2i3fhqo9af283es",
+    "createdAt": "2021-12-03T14:43:41.347Z",
+    "updatedAt": "2021-12-03T14:43:41.347Z"
+  },
+  {
+    "id": "54dvgkwqilyph",
+    "comment": "Not a fan!",
+    "rate": 1,
+    "productId": "l2i3fhqo9af283es",
+    "createdAt": "2021-12-03T15:01:35.092Z",
+    "updatedAt": "2021-12-03T15:01:35.092Z"
+  },
+  {
+    "id": "54dvgkwqim4kq",
+    "comment": 1231,
+    "rate": 1,
+    "productId": "l2i3fhqo9af283es",
+    "createdAt": "2021-12-03T15:01:42.698Z",
+    "updatedAt": "2021-12-03T15:01:42.698Z"
+  },
+  {
+    "id": "54dvgkwqinbab",
+    "comment": "Edited product!",
+    "rate": "two",
+    "productId": "l2i3fhqo9af283es",
+    "createdAt": "2021-12-03T15:02:38.051Z",
+    "updatedAt": "2021-12-03T15:02:38.051Z"
+  },
+  {
+    "id": "549jokwqiorxe",
+    "comment": "Edited product!",
+    "rate": "?",
+    "productId": "l2i3fhqo9af283es",
+    "createdAt": "2021-12-03T15:03:46.273Z",
+    "updatedAt": "2021-12-03T15:03:46.273Z"
+  },
+  {
+    "id": "546awkwqirfyx",
+    "comment": "Edited product!",
+    "rate": 3,
+    "productId": "l2i3fhqo9af283es",
+    "createdAt": "2021-12-03T15:05:50.744Z",
+    "updatedAt": "2021-12-03T15:05:50.744Z"
+  },
+  {
+    "id": "546awkwqis0p4",
+    "comment": "Edited product!",
+    "rate": "Validation check",
+    "productId": "l2i3fhqo9af283es",
+    "createdAt": "2021-12-03T15:06:17.608Z",
+    "updatedAt": "2021-12-03T15:06:17.608Z"
+  },
+  {
+    "id": "5449wkwqiwdyb",
+    "comment": "Edited product!",
+    "rate": "Validation check",
+    "productId": "l2i3fhqo9af283es",
+    "createdAt": "2021-12-03T15:09:41.410Z",
+    "updatedAt": "2021-12-03T15:09:41.410Z"
+  },
+  {
+    "id": "54afskwqixhaj",
+    "comment": "Edited product!",
+    "rate": "Test",
+    "productId": "l2i3fhqo9af283es",
+    "createdAt": "2021-12-03T15:10:32.394Z",
+    "updatedAt": "2021-12-03T15:10:32.394Z"
+  }
+]
