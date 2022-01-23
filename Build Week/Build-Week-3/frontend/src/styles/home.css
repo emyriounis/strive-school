@@ -1,0 +1,270 @@
+/* HomeLeftSideBar */
+
+.text_muted {
+  color: gray;
+}
+
+.reduced-text {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.profile-image-posts {
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+}
+.profile-image-posts2 {
+  height: 90px;
+  width: 90px;
+  border-radius: 50%;
+}
+
+.post-actions .col-2:hover {
+  background-color: rgb(236, 233, 233);
+  cursor: pointer;
+}
+
+.skeleton-profile-pic {
+  background-color: lightgray;
+  margin: 0.5rem 0;
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+}
+
+.skeleton-name {
+  background-color: lightgray;
+  margin: 0.25rem 0;
+  height: 10px;
+}
+
+.skeleton-bio {
+  background-color: lightgray;
+  margin: 0.255rem 0;
+  height: 10px;
+}
+
+.skeleton-text {
+  background-color: lightgray;
+  margin: 0.25rem 0;
+  height: 10px;
+}
+
+.skeleton-action {
+  background-color: lightgray;
+  margin: 0.25rem 0;
+  height: 10px;
+}
+
+.sidebar-image {
+  width: 55px;
+  border-radius: 50%;
+  padding-top: 10px;
+}
+.text-secondary {
+  font-size: 12px;
+}
+.saved {
+  margin-top: 5px;
+  margin-left: 13px;
+}
+.num_prof {
+  position: absolute;
+  left: 80%;
+  top: 51%;
+  color: blue;
+}
+.num_post {
+  position: absolute;
+  left: 80%;
+  top: 61%;
+  color: blue;
+  background-color: lightgray;
+  margin: 0.25rem 0;
+  height: 12px;
+  border-radius: 0.25rem;
+}
+
+.skeleton-bio {
+  background-color: lightgray;
+  margin: 0.255rem 0;
+  height: 12px;
+  border-radius: 0.25rem;
+}
+
+.skeleton-text {
+  background-color: lightgray;
+  margin: 0.25rem 0;
+  height: 12px;
+  border-radius: 0.25rem;
+}
+
+.skeleton-action {
+  background-color: lightgray;
+  margin: 0.25rem 0;
+  height: 16px;
+  border-radius: 0.25rem;
+}
+
+.bi-three-dots {
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  padding-left: 0.4rem;
+  padding-top: 0.2rem;
+}
+
+.bi-three-dots:hover {
+  background-color: lightgray;
+  cursor: pointer;
+}
+/* HomeLeftSideBar */
+
+.text_muted {
+  color: gray;
+  font-size: 11px;
+}
+.sidebar-image {
+  width: 55px;
+  border-radius: 50%;
+  padding-top: 10px;
+}
+.text-secondary {
+  font-size: 12px;
+}
+.saved {
+  margin-top: 5px;
+  margin-left: 13px;
+}
+.num_prof {
+  position: absolute;
+  left: 80%;
+  top: 51%;
+  color: blue;
+}
+.num_post {
+  position: absolute;
+  left: 80%;
+  top: 61%;
+  color: blue;
+}
+.plus {
+  cursor: pointer;
+  position: absolute;
+  top: 75%;
+  left: 90%;
+  font-size: 22px;
+}
+.Showmore {
+  color: gray;
+  font-size: 11px;
+  position: absolute;
+  top: 73%;
+  left: 40%;
+}
+.Showless {
+  color: gray;
+  font-size: 11px;
+  position: absolute;
+  top: 78%;
+  left: 40%;
+}
+.rightsideicon {
+  font-size: 12px;
+}
+
+
+
+input:focus,
+textarea:focus,
+select:focus,
+.form-control:focus {
+  outline: none;
+  border: 0;
+}
+textarea:focus,
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="datetime"]:focus,
+input[type="datetime-local"]:focus,
+input[type="date"]:focus,
+input[type="month"]:focus,
+input[type="time"]:focus,
+input[type="week"]:focus,
+input[type="number"]:focus,
+input[type="email"]:focus,
+input[type="url"]:focus,
+input[type="search"]:focus,
+input[type="tel"]:focus,
+input[type="color"]:focus,
+.uneditable-input:focus {
+  border-color: rgba(126, 239, 104, 0.8);
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset,
+    0 0 8px rgba(126, 239, 104, 0.6);
+  outline: 0 none;
+}
+/* HomeLeftSideBar */
+
+.text_muted {
+  color: gray;
+  font-size: 11px;
+}
+.sidebar-image {
+  width: 55px;
+  border-radius: 50%;
+  padding-top: 10px;
+}
+.text-secondary {
+  font-size: 12px;
+}
+.saved {
+  margin-top: 5px;
+  margin-left: 13px;
+}
+.num_prof {
+  position: absolute;
+  left: 80%;
+  top: 51%;
+  color: blue;
+}
+.num_post {
+  position: absolute;
+  left: 80%;
+  top: 61%;
+  color: blue;
+}
+.plus {
+  cursor: pointer;
+  position: absolute;
+  top: 75%;
+  left: 90%;
+  font-size: 22px;
+}
+.Showmore {
+  color: gray;
+  font-size: 11px;
+  position: absolute;
+  top: 73%;
+  left: 40%;
+}
+.Showless {
+  color: gray;
+  font-size: 11px;
+  position: absolute;
+  top: 78%;
+  left: 40%;
+}
+.rightsideicon {
+  font-size: 12px;
+}
+
+
+
+input:focus,
+textarea:focus,
+select:focus {
+  outline: none;
+  border: none;
+}
