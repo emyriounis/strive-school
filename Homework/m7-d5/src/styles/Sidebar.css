@@ -1,0 +1,34 @@
+.offcanvas {
+  background: #000;
+}
+
+.stack {
+  height: calc(100vh - 68px);
+  overflow-y: auto;
+}
+
+.link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.link:hover {
+  color: #fff;
+  background: #666;
+  border-radius: 5px;
+  font-weight: 500;
+}
+
+.albumsList {
+  min-height: 100px;
+  max-height: calc(100vh - 350px);
+  font-size: 0.8em;
+  font-weight: 300;
+  overflow: auto;
+}
+
+.user {
+  font-size: 0.7em;
+  font-weight: 500;
+  border-radius: 30px;
+}
